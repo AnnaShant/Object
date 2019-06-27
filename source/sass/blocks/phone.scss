@@ -1,0 +1,152 @@
+.phone__link {
+  display: none;
+}
+
+.phone__btn {
+  width: 48px;
+  height: 48px;
+  margin-top: 15px;
+
+  font-size: 0;
+
+  background-image: url('../img/svg/phone-btn.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $color-btn;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px #EB391C;
+
+    opacity: 0.5;
+  }
+}
+
+.phone__text-min {
+  display: none;
+}
+
+@media #{$tablet-widths-v} {
+  .phone {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    position: relative;
+    z-index: 4;
+
+    margin-right: 0;
+    padding-top: 5px;
+  }
+
+  .phone__wrap {
+    position: relative;
+
+    margin-top: 40px;
+    padding-left: 40px;
+
+    background-image: url('../img/svg/arrow-red.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+
+  .phone__link {
+    display: block;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    color: $color-fat;
+    text-decoration: none;
+    letter-spacing: -1px;
+
+    border-bottom: dashed 1px #EB391C;
+  }
+
+  .phone__text-min {
+    position: absolute;
+    top: -35px;
+    right: 5px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+
+    color: #979797;
+  }
+
+  .phone__btn {
+    width: 64px;
+    height: 44px;
+    margin-top: 25px;
+    margin-left: 17px;
+
+    font-size: 0;
+
+    background-image: url('../img/svg/phone-btn.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $color-btn;
+
+    border: none;
+    border-radius: 33px;
+
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+
+    &:disabled {
+      box-shadow: none;
+
+      border: dashed 1px #EB391C;
+
+      opacity: 0.5;
+    }
+  }
+
+}
+
+@media #{$tablet-widths-h} {
+  .phone {
+    margin-left: 135px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .phone {
+    margin-left: 185px;
+  }
+
+  .phone__btn {
+    width: 173px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    background-image: none;
+  }
+}

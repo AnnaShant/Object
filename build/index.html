@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js" async=""></script>
+  </head>
+  <body class="page">
+    <header class="page-header" id="header">
+      <div class="container">
+
+        <div class="page-header__wrap">
+          <div class="logo">
+            <a class="logo__link" href="#">
+              <picture class="logo__link-picture">
+                <source media="(min-width: 1366px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 1024px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 768px)" srcset="pic/svg/logo-v.svg">
+                <img class="logo__img" src="pic/svg/logo-mobile.svg" alt="Logo">
+              </picture>
+            </a>
+            <div class="logo__wrap">
+              <p class="logo__title">Траектория Развития</p>
+              <p class="logo__text">Единое окно субсидирования инновационных проектов</p>
+            </div>
+          </div>
+
+          <div class="page-header__phone phone">
+            <div class="phone__wrap">
+              <p class="phone__text-min">Пн-Пт с 9:00 - 22:00</p>
+              <a class="phone__link" href="tel:+7 (343) 207-51-47">+7 (343) 207-51-47</a>
+            </div>
+            <button class="phone__btn btn__form-opened" aria-label="Заказть обратный звонок">Заказать звонок</button>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="help">
+        <div class="container">
+          <div class="help__box">
+            <p class="help__title">Поможем привлечь до 100 млн. руб. инвестиций</p>
+            <p class="help__text-min">от институтов развития РФ</p>
+
+            <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
+              <label class="help__label"></label>
+              <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
+              <button class="btn btn__help"><span>Хочу узнать как</span></button>
+            </form>
+
+            <div class="help__wrap-text">
+              <p class="help__text">Мы помогли привлечь более ₽560М инвестиций в компании IT и рынков НТИ</p>
+            </div>
+          </div>
+
+          <div class="help__block">
+            <picture class="help__picture">
+              <source media="(min-width: 1366px)" srcset="pic/svg/header-img-d.svg">
+              <source media="(min-width: 1024px)" srcset="pic/svg/header-img-h.svg">
+              <img class="help__img" src="pic/svg/header-img-v.svg" alt="Деталь">
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

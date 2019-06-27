@@ -1,0 +1,32 @@
+.container {
+  width: 360px;
+  margin: 0 auto;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &--desktop {
+    width: auto;
+  }
+}
+
+@media #{$tablet-widths-v} {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .container {
+    width: 1024px;
+    padding: 0 20px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .container {
+    width: 1366px;
+    padding: 0 112px;
+  }
+}

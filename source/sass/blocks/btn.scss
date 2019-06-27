@@ -1,0 +1,116 @@
+.btn {
+  @include reset-btn();
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 44px;
+  padding-right: 44px;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: $color-btn;
+
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px #CBCBCB;
+
+    opacity: 0.5;
+  }
+}
+
+.btn__help {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 110px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  border-radius: 24px;
+}
+
+.btn__help span {
+  display: none;
+}
+
+@media #{$tablet-widths-v} {
+  .btn__help {
+    position: absolute;
+    right: 60px;
+    top: 0;
+
+    width: 240px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    text-align: right;
+
+    background-image: url('../img/svg/arrow-white.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+
+    border-radius: 24px;
+
+    &:hover {
+      text-align: left;
+
+      background-image: url('../img/svg/arrow-white.svg');
+      background-position: right;
+      background-repeat: no-repeat;
+
+      transition: text-align 5s;
+    }
+  }
+
+  .btn__help span {
+    display: block;
+
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: -1px;
+  }
+
+  .btn__help:hover span {
+    margin-left: -20px;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .btn__help {
+    position: absolute;
+    right: 180px;
+    top: 0;
+
+    width: 220px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    border-radius: 24px;
+  }
+}
