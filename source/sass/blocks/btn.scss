@@ -48,7 +48,19 @@
   padding-top: 24px;
   padding-bottom: 24px;
 
+  background-image: url('../img/arrow-white.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+
   border-radius: 24px;
+
+  &:hover {
+    background-size: 35%;
+    background-position: 70%;
+
+    transition: background-size 0.4s ease-out 0.2s, background-position 0.4s ease-out 0.2s;
+  }
 }
 
 .btn__help span {
@@ -61,43 +73,44 @@
     right: 60px;
     top: 0;
 
-    width: 240px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    width: 220px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
-    text-align: right;
-
-    background-image: url('../img/svg/arrow-white.svg');
-    background-position: left;
+    background-image: url('../img/arrow-white.png');
+    background-position: 90%;
     background-repeat: no-repeat;
+    background-size: 10%;
 
     border-radius: 24px;
 
     &:hover {
-      text-align: left;
-
-      background-image: url('../img/svg/arrow-white.svg');
-      background-position: right;
+      background-image: url('../img/arrow-white-h.png');
+      background-position: 10%;
       background-repeat: no-repeat;
+      background-size: 10%;
 
-      transition: text-align 5s;
+      transition: background-position 0.4s ease-out 0.2s;
     }
   }
 
   .btn__help span {
-    display: block;
+    display: inline-block;
 
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    margin-left: -10px;
 
     font-size: 18px;
     text-transform: none;
     letter-spacing: -1px;
+    line-height: 10px;
   }
 
   .btn__help:hover span {
-    margin-left: -20px;
+    margin-left: 10px;
+
+    transition: margin-left 0.4s ease-out 0.2s;
   }
 }
 
@@ -108,9 +121,5 @@
     top: 0;
 
     width: 220px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-
-    border-radius: 24px;
   }
 }

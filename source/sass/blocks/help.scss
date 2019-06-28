@@ -61,7 +61,21 @@ input:focus::-moz-placeholder {
 }
 
 .help__wrap-text {
+  position: relative;
+
   margin-top: 55px;
+}
+
+.help__wrap-text svg {
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.help__wrap-text:hover svg {
+  left: 5px;
+
+  transition: left 0.3s ease-out 0.2s;
 }
 
 .help__text {
@@ -130,12 +144,20 @@ input:focus::-moz-placeholder {
     line-height: 30px;
   }
 
+  .help__wrap-text svg {
+    top: 0;
+  }
+
+  .help__wrap-text:hover svg {
+    left: 10px;
+  }
+
   .help__block {
     display: block;
 
     position: absolute;
-    right: 7px;
-    top: -60px;
+    right: 0;
+    top: -58px;
     z-index: -1;
   }
 }
@@ -188,6 +210,10 @@ input:focus::-moz-placeholder {
     color: $color-slim;
     line-height: 30px;
   }
+
+  .help__block {
+    top: -81px;
+  }
 }
 
 @media #{$desktop-widths} {
@@ -204,11 +230,6 @@ input:focus::-moz-placeholder {
   }
 
   .help__block {
-    display: block;
-
-    position: absolute;
-    right: -15px;
-    top: -80px;
-    z-index: -1;
+    top: -83px;
   }
 }

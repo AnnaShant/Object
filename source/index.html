@@ -16,20 +16,26 @@
           <div class="logo">
             <a class="logo__link" href="#">
               <picture class="logo__link-picture">
-                <source media="(min-width: 1366px)" srcset="pic/svg/logo-ipad-v.svg">
-                <source media="(min-width: 1024px)" srcset="pic/svg/logo-ipad-v.svg">
-                <source media="(min-width: 768px)" srcset="pic/svg/logo-ipad-v.svg">
+                <source media="(min-width: 1366px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 1024px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 768px)" srcset="pic/svg/logo-v.svg">
                 <img class="logo__img" src="pic/svg/logo-mobile.svg" alt="Logo">
               </picture>
             </a>
-            <p class="logo__title">Траектория Развития</p>
-            <p class="logo__text">Единое окно субсидирования инновационных проектов</p>
+            <div class="logo__wrap">
+              <p class="logo__title">Траектория Развития</p>
+              <p class="logo__text">Единое окно субсидирования инновационных проектов</p>
+            </div>
           </div>
 
           <div class="page-header__phone phone">
             <div class="phone__wrap">
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
+              </svg>
               <p class="phone__text-min">Пн-Пт с 9:00 - 22:00</p>
-              <a class="phone__link" href="tel:+7(343)300-96-83">+7 (343) 300-96-83</a>
+              <a class="phone__link" href="tel:+7 (343) 207-51-47">+7 (343) 207-51-47</a>
             </div>
             <button class="phone__btn btn__form-opened" aria-label="Заказть обратный звонок">Заказать звонок</button>
           </div>
@@ -39,6 +45,38 @@
     </header>
 
     <main class="page-main">
+      <section class="help">
+        <div class="container">
+          <div class="help__box">
+            <p class="help__title">Поможем привлечь до 100 млн. руб. инвестиций</p>
+            <p class="help__text-min">от институтов развития РФ</p>
+
+            <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
+              <label class="help__label"></label>
+              <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
+              <button class="btn btn__help"><span>Хочу узнать как</span></button>
+            </form>
+
+            <div class="help__wrap-text">
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+              <p class="help__text">Мы помогли привлечь более ₽560М инвестиций в компании IT и рынков НТИ</p>
+            </div>
+          </div>
+
+          <div class="help__block">
+            <picture class="help__picture">
+              <source media="(min-width: 2500px)" srcset="pic/svg/header-img-d-3.svg">
+              <source media="(min-width: 1600px)" srcset="pic/svg/header-img-d-2.svg">
+              <source media="(min-width: 1366px)" srcset="pic/svg/header-img-d.svg">
+              <source media="(min-width: 1024px)" srcset="pic/svg/header-img-h.svg">
+              <img class="help__img" src="pic/svg/header-img-v.svg" alt="Деталь">
+            </picture>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">

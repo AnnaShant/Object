@@ -137,7 +137,16 @@ input[type="radio"].visually-hidden {
   width: 110px;
   padding-top: 24px;
   padding-bottom: 24px;
+  background-image: url("../img/arrow-white.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
   border-radius: 24px; }
+  .btn__help:hover {
+    background-size: 35%;
+    background-position: 70%;
+    -webkit-transition: background-size 0.4s ease-out 0.2s, background-position 0.4s ease-out 0.2s;
+    transition: background-size 0.4s ease-out 0.2s, background-position 0.4s ease-out 0.2s; }
 
 .btn__help span {
   display: none; }
@@ -147,41 +156,41 @@ input[type="radio"].visually-hidden {
     position: absolute;
     right: 60px;
     top: 0;
-    width: 240px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    text-align: right;
-    background-image: url("../img/svg/arrow-white.svg");
-    background-position: left;
+    width: 220px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-image: url("../img/arrow-white.png");
+    background-position: 90%;
     background-repeat: no-repeat;
+    background-size: 10%;
     border-radius: 24px; }
     .btn__help:hover {
-      text-align: left;
-      background-image: url("../img/svg/arrow-white.svg");
-      background-position: right;
+      background-image: url("../img/arrow-white-h.png");
+      background-position: 10%;
       background-repeat: no-repeat;
-      -webkit-transition: text-align 5s;
-      transition: text-align 5s; }
+      background-size: 10%;
+      -webkit-transition: background-position 0.4s ease-out 0.2s;
+      transition: background-position 0.4s ease-out 0.2s; }
   .btn__help span {
-    display: block;
+    display: inline-block;
     margin: 0;
     padding: 0;
-    margin-left: 20px;
+    margin-left: -10px;
     font-size: 18px;
     text-transform: none;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    line-height: 10px; }
   .btn__help:hover span {
-    margin-left: -20px; } }
+    margin-left: 10px;
+    -webkit-transition: margin-left 0.4s ease-out 0.2s;
+    transition: margin-left 0.4s ease-out 0.2s; } }
 
 @media (min-width: 1024px) {
   .btn__help {
     position: absolute;
     right: 180px;
     top: 0;
-    width: 220px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    border-radius: 24px; } }
+    width: 220px; } }
 
 .logo {
   display: -webkit-box;
@@ -263,6 +272,9 @@ input[type="radio"].visually-hidden {
     border: dashed 1px #EB391C;
     opacity: 0.5; }
 
+.phone__wrap svg {
+  display: none; }
+
 .phone__text-min {
   display: none; }
 
@@ -284,9 +296,18 @@ input[type="radio"].visually-hidden {
     position: relative;
     margin-top: 40px;
     padding-left: 40px;
-    background-image: url("../img/svg/arrow-red.svg");
-    background-position: left;
-    background-repeat: no-repeat; }
+    cursor: pointer; }
+  .phone__wrap svg {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 30px;
+    height: 25px; }
+  .phone__wrap:hover svg {
+    left: 10px;
+    -webkit-transition: left 0.3s ease-out 0.2s;
+    transition: left 0.3s ease-out 0.2s; }
   .phone__link {
     display: block;
     margin: 0;
@@ -297,6 +318,7 @@ input[type="radio"].visually-hidden {
     letter-spacing: -1px;
     border-bottom: dashed 1px #EB391C; }
   .phone__text-min {
+    display: block;
     position: absolute;
     top: -35px;
     right: 5px;
@@ -435,7 +457,18 @@ input:focus::-moz-placeholder {
   font-size: 0; }
 
 .help__wrap-text {
+  position: relative;
   margin-top: 55px; }
+
+.help__wrap-text svg {
+  position: absolute;
+  left: 0;
+  top: 10%; }
+
+.help__wrap-text:hover svg {
+  left: 5px;
+  -webkit-transition: left 0.3s ease-out 0.2s;
+  transition: left 0.3s ease-out 0.2s; }
 
 .help__text {
   margin: 0;
@@ -481,11 +514,15 @@ input:focus::-moz-placeholder {
     font-weight: 400;
     color: #989898;
     line-height: 30px; }
+  .help__wrap-text svg {
+    top: 0; }
+  .help__wrap-text:hover svg {
+    left: 10px; }
   .help__block {
     display: block;
     position: absolute;
-    right: 7px;
-    top: -60px;
+    right: 0;
+    top: -58px;
     z-index: -1; } }
 
 @media (min-width: 1024px) {
@@ -517,7 +554,9 @@ input:focus::-moz-placeholder {
     margin-left: 40px;
     font-weight: 400;
     color: #989898;
-    line-height: 30px; } }
+    line-height: 30px; }
+  .help__block {
+    top: -81px; } }
 
 @media (min-width: 1366px) {
   .help {
@@ -527,8 +566,4 @@ input:focus::-moz-placeholder {
   .help__text {
     margin-top: -10px; }
   .help__block {
-    display: block;
-    position: absolute;
-    right: -15px;
-    top: -80px;
-    z-index: -1; } }
+    top: -83px; } }

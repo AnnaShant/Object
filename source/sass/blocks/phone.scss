@@ -36,6 +36,10 @@
   }
 }
 
+.phone__wrap svg {
+  display: none;
+}
+
 .phone__text-min {
   display: none;
 }
@@ -59,9 +63,24 @@
     margin-top: 40px;
     padding-left: 40px;
 
-    background-image: url('../img/svg/arrow-red.svg');
-    background-position: left;
-    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .phone__wrap svg {
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 15%;
+
+    width: 30px;
+    height: 25px;
+  }
+
+  .phone__wrap:hover svg {
+    left: 10px;
+
+    transition: left 0.3s ease-out 0.2s;
   }
 
   .phone__link {
@@ -78,6 +97,8 @@
   }
 
   .phone__text-min {
+    display: block;
+
     position: absolute;
     top: -35px;
     right: 5px;
