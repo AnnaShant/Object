@@ -1,0 +1,236 @@
+.modal-confirmation__overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-confirmation {
+  display: none;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+
+  width: 300px;
+  margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 0;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border: 2px solid #1BB54F;
+  border-radius: 21px;
+
+  &--error {
+    display: none;
+
+    border: 2px solid #FF0000;
+  }
+
+  &--present {
+    display: none;
+
+    padding-top: 20px;
+
+    background-image: url("../img/Intersect-mob.png");
+    background-repeat: no-repeat;
+    background-position: top;
+
+    border: 2px solid #FF0000;
+  }
+}
+
+.modal-confirmation__svg {
+  position: absolute;
+  right: -5px;
+  top: 85px;
+}
+
+.modal-confirmation__wrapper {
+  position: relative;
+
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  text-align: center;
+}
+
+.modal-confirmation__close {
+  position: absolute;
+  top: 18px;
+  right: 6px;
+  z-index: 5;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.modal-confirmation__close {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 38px;
+    height: 2px;
+
+    background-color: #545454;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.modal-confirmation__img {
+  width: 52px;
+  height: 52px;
+}
+
+.modal-confirmation__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: -0.02em;
+  color: #1BB54F;
+
+  &--error {
+    padding-left: 30px;
+    padding-right: 30px;
+
+    color: #FF1414;
+  }
+}
+
+.modal-confirmation__text {
+  display: block;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: $color-slim;
+  text-decoration: none;
+
+  &:hover {
+    color: #545454;
+  }
+}
+
+@media #{$tablet-widths-v} {
+  .modal-confirmation {
+    width: 600px;
+    padding: 40px;
+
+    &--present {
+      width: 728px;
+      margin-top: 50px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+
+      background-image: url("../img/Intersect-v.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 40% 100%;
+    }
+  }
+
+  .modal-confirmation__box {
+    display: flex;
+  }
+
+  .modal-confirmation__svg {
+    display: none;
+  }
+
+  .modal-confirmation__text {
+    &--present {
+      text-align: left;
+    }
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .modal-confirmation {
+    width: 758px;
+    padding: 80px;
+
+    &--present {
+      width: 800px;
+      padding: 80px;
+
+      background-size: 40% 100%;
+    }
+  }
+
+  .modal-confirmation__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .modal-confirmation__block:first-child {
+    margin-bottom: 40px;
+  }
+
+  .modal-confirmation__title {
+    display: inline-block;
+    margin-top: -10px;
+
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    line-height: 46px;
+  }
+
+  .modal-confirmation__text {
+    width: 150px;
+  }
+
+  .modal-confirmation__close {
+    top: -55px;
+    right: -55px;
+
+    &--15 {
+      top: 25px;
+      right: 25px;
+    }
+  }
+}

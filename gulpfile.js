@@ -41,6 +41,7 @@ gulp.task("copy", function (done) {
       "source/img/**",
       "source/pic/**",
       "source/js/**",
+      "source/vendor/**",
   ], {
     base: "source"
   })
@@ -87,7 +88,7 @@ gulp.task("server", function(done) {
     done
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"));
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.parallel("style"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 

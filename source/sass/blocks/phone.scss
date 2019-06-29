@@ -24,13 +24,15 @@
   }
 
   &:active {
+    background-color: #C10404;
+
     box-shadow: none;
   }
 
   &:disabled {
     box-shadow: none;
 
-    border: dashed 1px #EB391C;
+    border: dashed 1px $color-btn;
 
     opacity: 0.5;
   }

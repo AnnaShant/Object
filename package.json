@@ -1,16 +1,16 @@
 {
-  "name": "pink-16",
+  "name": "Unita",
   "version": "16.0.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Gulp4Test",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^9.5.1",
-    "browser-sync": "2.26.x",
+    "autoprefixer": "^9.6.0",
+    "browser-sync": "^2.26.7",
     "gulp": "4.0.x",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-sass": "4.0.x",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "2.6.x",
     "stylelint": "9.10.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -19,7 +19,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp start"
   },
   "browserslist": [

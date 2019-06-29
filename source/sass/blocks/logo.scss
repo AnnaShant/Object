@@ -1,6 +1,12 @@
 .logo {
   display: flex;
   justify-content: space-between;
+
+  &--footer {
+    justify-content: start;
+
+    padding-top: 0px;
+  }
 }
 
 .logo__img {
@@ -8,6 +14,10 @@
   height: 38px;
   margin-top: 22px;
   margin-left: 2px;
+
+  &--footer {
+    margin-top: 9px;
+  }
 }
 
 .logo__wrap {
@@ -15,6 +25,10 @@
   margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
+
+  &--footer {
+    margin-top: 3px;
+  }
 }
 
 .logo__title {
@@ -28,42 +42,147 @@
   margin: 0;
 
   font-size: 12px;
+  font-weight: 400;
   color: #2E2E2E;
 }
 
+.logo-footer__text-min {
+  display: none;
+}
+
 @media #{$tablet-widths-v} {
+  .logo {
+    &--footer {
+      width: 390px;
+      padding-top: 10px;
+    }
+  }
+
   .logo__img {
     width: 44px;
     height: 44px;
     margin-top: 32px;
+
+    &--footer {
+      width: 40px;
+      height: 40px;
+
+      margin-top: 30px;
+    }
   }
 
   .logo__wrap {
     width: 330px;
     margin-top: 20px;
+
+    &--footer {
+      width: 270px;
+      margin-left: 10px;
+    }
   }
 
   .logo__title {
     font-size: 30px;
+
+    &--footer {
+      margin-bottom: 5px;
+
+      font-size: 24px;
+    }
+  }
+
+  .logo__text {
+    &--footer {
+      font-size: 16px;
+    }
+  }
+
+  .logo-footer__text-min {
+    display: inline-block;
+
+    margin: 0;
+    margin-top: 5px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444444;
   }
 }
 
 @media #{$tablet-widths-h} {
+  .logo {
+    &--footer {
+      width: 390px;
+      padding-top: 50px;
+    }
+  }
+
   .logo__wrap {
     width: 448px;
+
+    &--footer {
+      width: 345px;
+      margin-left: 10px;
+      margin-bottom: 0;
+      margin-top: 25px;
+    }
+  }
+
+  .logo__img {
+    &--footer {
+      margin-top: 25px;
+    }
+  }
+
+  .logo__title {
+    &--footer {
+      font-size: 30px;
+      line-height: 20px;
+    }
   }
 
   .logo__text {
     font-size: 16px;
+
+    &--footer {
+      line-height: 22px;
+    }
   }
 }
 
 @media #{$desktop-widths} {
+  .logo {
+    &--footer {
+      width: 600px;
+      padding-top: 75px;
+    }
+  }
+
   .logo__img {
     margin-top: 34px;
+
+    &--footer {
+      margin-top: 25px;
+    }
   }
 
   .logo__wrap {
     margin-top: 20px;
+
+    &--footer {
+      width: 500px;
+      margin-left: 20px;
+    }
+  }
+
+  .logo__title {
+    &--footer {
+      margin-bottom: 10px;
+    }
+  }
+
+  .logo-footer__text-min {
+    margin-top: 15px;
   }
 }

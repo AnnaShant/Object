@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/picturefill.min.js" async=""></script>
   </head>
@@ -37,7 +39,7 @@
               <p class="phone__text-min">Пн-Пт с 9:00 - 22:00</p>
               <a class="phone__link" href="tel:+7 (343) 207-51-47">+7 (343) 207-51-47</a>
             </div>
-            <button class="phone__btn btn__form-opened" aria-label="Заказть обратный звонок">Заказать звонок</button>
+            <button class="phone__btn btn__opened-1" aria-label="Заказть обратный звонок">Заказать звонок</button>
           </div>
 
         </div>
@@ -48,19 +50,19 @@
       <section class="help">
         <div class="container">
           <div class="help__box">
-            <p class="help__title">Поможем привлечь до 100 млн. руб. инвестиций</p>
+            <h1 class="help__title">Поможем привлечь до 100 млн. руб. инвестиций</h1>
             <p class="help__text-min">от институтов развития РФ</p>
 
             <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
               <label class="help__label"></label>
               <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
-              <button class="btn btn__help"><span>Хочу узнать как</span></button>
+              <button class="btn btn__help btn__opened-1"><span>Хочу узнать как</span></button>
             </form>
 
             <div class="help__wrap-text">
               <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
-                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+                <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
               </svg>
               <p class="help__text">Мы помогли привлечь более ₽560М инвестиций в компании IT и рынков НТИ</p>
             </div>
@@ -77,11 +79,270 @@
           </div>
         </div>
       </section>
+
+      <section class="services">
+        <div class="container">
+
+          <h2 class="title title__services">Услуги</h2>
+
+          <div class="services__box">
+            <svg class="services__P" width="93" height="100" viewBox="0 0 93 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_f)">
+                <path d="M54.7637 77.959H38.3047V88H22.7773V77.959H12.2705V65.3818H22.7773V61.4482H12.2705V48.8711H22.7773V12.6406H52.0723C57.7311 12.6406 62.6999 13.6585 66.9785 15.6943C71.2572 17.7301 74.5697 20.6458 76.916 24.4414C79.2969 28.2025 80.4873 32.4984 80.4873 37.3291C80.4873 44.7822 77.9512 50.6654 72.8789 54.9785C67.8411 59.2917 60.8193 61.4482 51.8135 61.4482H38.3047V65.3818H54.7637V77.959ZM38.3047 48.8711H51.71C60.4053 48.8711 64.7529 45.0583 64.7529 37.4326C64.7529 33.8096 63.6488 30.8939 61.4404 28.6855C59.2321 26.4427 56.1784 25.304 52.2793 25.2695H38.3047V48.8711Z" fill="#2E2E2E" fill-opacity="0.3"></path>
+              </g>
+              <defs>
+                <filter id="filter0_f" x="0.270508" y="0.640625" width="92.2168" height="99.3594" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                <feGaussianBlur stdDeviation="6" result="effect1_foregroundBlur"></feGaussianBlur>
+                </filter>
+              </defs>
+            </svg>
+
+            <div class="services__box-wrap">
+              <svg class="services__svg-arrow" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
+              </svg>
+              <p class="services__text">
+                  Создаём "Траектории развития" компаний,
+                  основанные на участии в национальных проектах,
+                  а так же других программах институтов развития РФ.
+              </p>
+              <svg class="services__svg-hand" width="36" height="33" viewBox="0 0 36 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5687 32C18.0843 32 15.7799 31.4152 14.2568 31.0279C13.5421 30.8462 13.0249 30.7148 12.5568 30.7148H6.38344C6.0823 30.7148 5.83789 30.4935 5.83789 30.2208V18.5877C5.83789 18.3151 6.0823 18.0938 6.38344 18.0938C8.52198 18.0938 10.3747 17.0229 11.8891 14.9109C14.0178 11.9394 15.2715 10.2728 17.5213 7.6461C19.65 5.1626 20.8295 2.43806 21.0412 1.57466L21.1197 1.22792C21.2507 0.624332 21.386 0 22.4967 0C24.6734 0 25.8485 2.27506 25.8485 4.41676C25.8485 5.73852 25.2986 7.51669 24.1682 9.85299C23.7285 10.7628 23.7973 11.397 23.9904 11.6638C24.0864 11.7971 24.2217 11.8594 24.4159 11.8594H33.0759C34.1299 11.969 36.0001 12.7129 36.0001 14.7617C36.0001 16.119 35.4567 16.8757 34.9439 17.2877C35.4501 17.7036 36.0001 18.4287 36.0001 19.6141C36.0001 20.9932 34.9908 21.8625 34.2434 22.3169C34.6296 22.717 35.005 23.3907 35.005 24.4991C35.005 26.0767 33.5189 26.8779 32.5729 27.2286C32.9483 27.8431 33.0214 28.5681 32.8337 29.5639C32.5107 31.2719 29.4404 32 22.5687 32ZM6.92898 29.7269H12.5568C13.1744 29.7269 13.7821 29.881 14.5514 30.0766C16.0178 30.449 18.2338 31.0121 22.5687 31.0121C30.298 31.0121 31.6422 30.0015 31.7568 29.3989C31.975 28.2421 31.7415 27.7443 31.2931 27.3155C31.1589 27.1871 31.112 27.0034 31.1676 26.8344C31.2243 26.6655 31.3749 26.5361 31.5659 26.4956C31.5888 26.4907 33.9117 25.978 33.9117 24.5011C33.9117 23.0282 33.1043 22.7289 33.0705 22.717C32.8621 22.6449 32.717 22.4611 32.7148 22.2586C32.7126 22.0561 32.8392 21.8704 33.0476 21.7934C33.0661 21.7864 34.9079 21.087 34.9079 19.6151C34.9079 18.1452 33.748 17.7352 33.7371 17.7312C33.5135 17.6552 33.3705 17.4576 33.3836 17.2422C33.3967 17.0269 33.5615 16.8441 33.7928 16.7898C33.8299 16.7799 34.9079 16.4727 34.9079 14.7617C34.9079 13.0685 33.0879 12.8522 33.0105 12.8443L24.4159 12.8472C23.8518 12.8472 23.3772 12.619 23.0772 12.2041C22.6058 11.5511 22.6396 10.5504 23.1688 9.45587C24.237 7.247 24.7574 5.59825 24.7574 4.41577C24.7574 2.99324 24.057 0.987868 22.4967 0.987868C22.3308 0.987868 22.2807 1.00664 22.2796 1.00763C22.2741 1.0343 22.2283 1.24768 22.1912 1.41858L22.1072 1.79002C21.8791 2.7196 20.6266 5.63776 18.3844 8.25265C16.1585 10.8517 14.9169 12.5025 12.8056 15.4503C11.2017 17.6858 9.22901 18.8989 6.93007 19.0639V29.7269H6.92898Z" fill="#FF0000"></path>
+                <path d="M6.28251 33H0.528297C0.236677 33 0 32.7782 0 32.5049V15.4951C0 15.2218 0.236677 15 0.528297 15H6.28251C6.57413 15 6.81081 15.2218 6.81081 15.4951V32.5049C6.81081 32.7782 6.57519 33 6.28251 33ZM1.05659 32.0098H5.75422V15.9902H1.05659V32.0098Z" fill="#FF0000"></path>
+              </svg>
+            </div>
+
+            <div class="services__block services__block--1">
+              <h3 class="services__block-title">Разработка траектории развития</h3>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            </div>
+
+            <div class="services__block services__block--2">
+              <h3 class="services__block-title">Разработка траектории развития</h3>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            </div>
+          </div>
+
+          <div class="services__slider" id="services">
+
+            <div class="services__block services__block--3">
+              <h3 class="services__block-title">Разработка траектории развития</h3>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            </div>
+
+            <div class="services__block services__block--4">
+              <h3 class="services__block-title">Разработка траектории развития</h3>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            </div>
+
+            <div class="services__block services__block--escort">
+              <h3 class="services__block-title">Сопровождение</h3>
+              <p class="services__block-text">1 месяц</p>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 30 000</span></button>
+            </div>
+
+            <div class="services__block services__block--escort">
+              <h3 class="services__block-title">Сопровождение</h3>
+              <p class="services__block-text">3 месяц</p>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 80 000</span></button>
+            </div>
+
+            <div class="services__block services__block--escort">
+              <h3 class="services__block-title">Сопровождение</h3>
+              <p class="services__block-text">6 месяц</p>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 150 000</span></button>
+            </div>
+
+            <div class="services__block services__block--escort">
+              <h3 class="services__block-title">Сопровождение</h3>
+              <p class="services__block-text">12 месяц</p>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 280 000</span></button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="present">
+        <div class="container">
+          <h2 class="title title__present">Подарок</h2>
+          <div class="present__wrap">
+            <div class="present__15">
+              <p class="present__text-15">15</p>
+              <p class="present__text-1">Минут консультации</p>
+              <p class="present__text-2">Бесплатно</p>
+            </div>
+            <div class="present__profile">
+              <p class="present__profile-text">
+                Получите подарок, заполнив анкету, нажав&nbsp;на&nbsp;кнопку&nbsp;снизу
+              </p>
+              <svg class="present__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
+              </svg>
+              <svg class="present__svg-2" width="88" height="98" viewBox="0 0 88 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71.9938 5.39122C71.9336 4.84222 71.4398 4.44595 70.8908 4.50611C70.3418 4.56628 69.9455 5.0601 70.0057 5.6091L71.9938 5.39122ZM1.23544 78.8557C0.87944 79.278 0.933138 79.9089 1.35537 80.2649L8.23612 86.0662C8.65835 86.4222 9.28924 86.3685 9.64523 85.9462C10.0012 85.524 9.94754 84.8931 9.5253 84.5371L3.40909 79.3804L8.56582 73.2642C8.92182 72.8419 8.86812 72.2111 8.44589 71.8551C8.02365 71.4991 7.39277 71.5528 7.03677 71.975L1.23544 78.8557ZM70.0057 5.6091C73.9373 41.4848 48.4239 74.5454 1.91516 78.5039L2.08477 80.4967C49.5761 76.4546 76.0623 42.5157 71.9938 5.39122L70.0057 5.6091Z" fill="#FF0000"/>
+              </svg>
+              <div class="present__wrap-btn">
+                <a href="https://vk.cc/9xJ3ix" class="btn btn__present"><span>Заполните анкету</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrap">
+          <div class="logo logo--footer">
+            <a class="logo__link" href="#">
+              <picture class="logo__link-picture">
+                <source media="(min-width: 1366px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 1024px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 768px)" srcset="pic/svg/logo-v.svg">
+                <img class="logo__img logo__img--footer" src="pic/svg/logo-mobile.svg" alt="Logo">
+              </picture>
+            </a>
+            <div class="logo__wrap logo__wrap--footer">
+              <p class="logo__title logo__title--footer">Траектория Развития</p>
+              <p class="logo__text logo__text--footer">Единое окно субсидирования инновационных проектов</p>
+              <p class="logo-footer__text-min">© 2019 Все права защищены</p>
+            </div>
+          </div>
+
+          <div class="page-footer__wrap">
+            <div class="page-footer__contacts">
+              <h2 class="title title__page-footer">Контакты</h2>
+
+              <div class="page-footer__contacts-box">
+                <div class="page-footer__contacts-wrap page-footer__contacts-wrap-1">
+                  <p class="page-footer__contacts-text">+7 (343) 207-51-47</p>
+
+                  <p class="page-footer__contacts-text page-footer__contacts-text--email">info@traik.ru</p>
+                </div>
+
+                <div class="page-footer__contacts-wrap page-footer__contacts-wrap-2">
+                  <p class="page-footer__contacts-text page-footer__contacts-text--adress">г. Екатеринбург, ул. Ельциа, 4</p>
+
+                  <a class="page-footer__text" href="#">Политика конфиденциальости</a>
+                </div>
+              </div>
+            </div>
+
+          <p class="page-footer__text-min">© 2019 Все права защищены</p>
+
+          <a href="https://kinvasoft.com/">
+            <picture class="page-footer__picture">
+              <source media="(min-width: 768px)" srcset="pic/kinvasoft-ipad-v.webp">
+              <img class="page-footer__img" src="pic/kinvasoft-mobile.webp" alt="Kinvasoft">
+            </picture>
+          </a>
+        </div>
+      </div>
     </footer>
 
+    <!--Модальное окно с формой-->
+    <div class="modal-form__overlay"></div>
+    <div class="modal-form" id="modalForm">
+
+      <div class="modal-form__wrapper">
+        <button class="modal-form__close" type="button" aria-label="Закрыть"></button>
+
+        <p class="modal-form__text">По какому номеру вам позвонить?</p>
+
+        <svg class="modal__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
+        </svg>
+
+        <svg class="modal__svg-2" width="76" height="82" viewBox="0 0 76 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50.5277 1.1508C50.0587 0.859229 49.4421 1.0031 49.1505 1.47215C48.8589 1.9412 49.0028 2.5578 49.4719 2.84937L50.5277 1.1508ZM7.20957 64.3877C6.87137 64.8243 6.95117 65.4524 7.3878 65.7906L14.503 71.3018C14.9397 71.64 15.5678 71.5602 15.906 71.1236C16.2442 70.687 16.1644 70.0589 15.7277 69.7207L9.40309 64.8218L14.3019 58.4972C14.6401 58.0605 14.5603 57.4324 14.1237 57.0942C13.6871 56.756 13.059 56.8358 12.7208 57.2724L7.20957 64.3877ZM49.4719 2.84937C58.3465 8.36603 64.3978 21.5139 60.1143 34.3031C55.8537 47.024 41.2015 59.7742 7.87413 64.008L8.12618 65.9921C41.7991 61.7143 57.3967 48.7144 62.0108 34.9383C66.602 21.2304 60.153 7.13405 50.5277 1.1508L49.4719 2.84937Z" fill="#FF0000"/>
+        </svg>
+
+        <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
+          <label class="help__label"></label>
+          <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
+          <button class="btn btn__help btn__help--modal btn__opened-1"><span>Мой номер</span></button>
+        </form>
+
+        <p class="modal-form__text modal-form__text--1">Не хотите ждать?</p>
+        <p class="modal-form__text modal-form__text--2">Звоните по номеру:</p>
+        <p class="modal-form__text modal-form__text--3">+7 (343) 207-51-47</p>
+      </div>
+
+    </div>
+    <!--Окно "Заявка принята"-->
+    <div class="modal-confirmation__overlay"></div>
+    <div class="modal-confirmation" id="modalConfirmation">
+      <div class="modal-confirmation__wrapper">
+        <button class="modal-confirmation__close modal__close-1" type="button" aria-label="Закрыть"></button>
+        <div class="modal-confirmation__block">
+          <picture class="modal-confirmation__picture">
+            <img class="modal-confirmation__img" src="img/yes.png" alt="check mark">
+          </picture>
+          <p class="modal-confirmation__title">Ваша заявка принята!</p>
+        </div>
+        <div class="modal-confirmation__block">
+          <a href="#" class="modal-confirmation__text">Вернуться на сайт</a>
+          <a href="#" class="btn btn__modal btn__present"><span>Бесплатная консультация</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Окно "Что-то пошло не так"-->
+    <div class="modal-confirmation__overlay"></div>
+    <div class="modal-confirmation modal-confirmation--error" id="modal-confirmation-error">
+      <button class="modal-confirmation__close modal__close-2" type="button" aria-label="Закрыть"></button>
+      <div class="modal-confirmation__wrapper">
+        <div class="modal-confirmation__block">
+          <picture class="modal-confirmation__picture">
+            <img class="modal-confirmation__img" src="img/no.png" alt="check mark error">
+          </picture>
+          <p class="modal-confirmation__title modal-confirmation__title--error">Что-то пошло не так!</p>
+        </div>
+        <div class="modal-confirmation__block">
+        <a href="#" class="modal-confirmation__text">Вернуться на сайт</a>
+        <a href="#" class="btn btn__modal btn__present"><span>Бесплатная консультация</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!--Окно "Подарок"-->
+    <div class="modal-confirmation__overlay"></div>
+    <div class="modal-confirmation modal-confirmation--present" id="modalPresent">
+      <div class="modal-confirmation__box">
+        <button class="modal-confirmation__close modal-confirmation__close--15 modal__close-3" type="button" aria-label="Закрыть"></button>
+        <div class="present__15">
+          <p class="present__text-15">15</p>
+          <p class="present__text-1">Минут консультации</p>
+          <p class="present__text-2">Бесплатно</p>
+        </div>
+        <div class="present__profile">
+          <p class="present__profile-text present__profile-text--modal">
+            Получите подарок, заполнив анкету, нажав&nbsp;на&nbsp;кнопку&nbsp;снизу
+          </p>
+
+          <svg class="modal-confirmation__svg" width="30" height="103" viewBox="0 0 30 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.25116 0.0322815C0.716648 -0.106689 0.170682 0.213964 0.031714 0.74848C-0.10726 1.28299 0.213388 1.82896 0.747907 1.96793L1.25116 0.0322815ZM15.0726 101.874C15.2794 102.387 15.8622 102.634 16.3743 102.427L24.7198 99.058C25.2319 98.8512 25.4794 98.2685 25.2727 97.7564C25.0659 97.2442 24.4832 96.9967 23.971 97.2035L16.5528 100.198L13.5578 92.7802C13.3511 92.2681 12.7683 92.0206 12.2562 92.2273C11.744 92.4341 11.4965 93.0168 11.7033 93.529L15.0726 101.874ZM0.747907 1.96793C12.7883 5.09838 22.3272 15.7236 25.8959 32.7057C29.4666 49.6969 27.0265 72.9834 15.0795 101.109L16.9203 101.891C28.9729 73.5168 31.5326 49.8032 27.8532 32.2944C24.1719 14.7765 14.2108 3.40173 1.25116 0.0322815L0.747907 1.96793Z" fill="#FF0000"/>
+          </svg>
+          <svg class="present__svg-2" width="88" height="98" viewBox="0 0 88 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M71.9938 5.39122C71.9336 4.84222 71.4398 4.44595 70.8908 4.50611C70.3418 4.56628 69.9455 5.0601 70.0057 5.6091L71.9938 5.39122ZM1.23544 78.8557C0.87944 79.278 0.933138 79.9089 1.35537 80.2649L8.23612 86.0662C8.65835 86.4222 9.28924 86.3685 9.64523 85.9462C10.0012 85.524 9.94754 84.8931 9.5253 84.5371L3.40909 79.3804L8.56582 73.2642C8.92182 72.8419 8.86812 72.2111 8.44589 71.8551C8.02365 71.4991 7.39277 71.5528 7.03677 71.975L1.23544 78.8557ZM70.0057 5.6091C73.9373 41.4848 48.4239 74.5454 1.91516 78.5039L2.08477 80.4967C49.5761 76.4546 76.0623 42.5157 71.9938 5.39122L70.0057 5.6091Z" fill="#FF0000"/>
+          </svg>
+          <a href="#" class="modal-confirmation__text modal-confirmation__text--present">Не хочу подарок</a>
+          <div class="present__wrap-btn">
+            <a href="https://vk.cc/9xJ3ix" class="btn btn__present"><span>Заполните анкету</span></a>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="vendor/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/modernizr-1.7.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,207 @@
+.present {
+  padding-top: 40px;
+  padding-bottom: 73px;
+}
+
+.present__wrap {
+  width: 300px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
+  background-image: url("../img/Intersect-mob.png");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  border: 2px solid #FF0000;
+  border-radius: 21px;
+}
+
+.present__15 {
+  margin-bottom: 70px;
+
+  color: $color-btn;
+}
+
+.present__text-15 {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 20px;
+}
+
+.present__text-1 {
+  margin: 0;
+
+  text-transform: lowercase;
+}
+
+.present__text-2 {
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+.present__profile {
+  position: relative;
+}
+
+.present__profile-text {
+  margin-bottom: 30px;
+
+  font-size: 22px;
+  font-weight: 400;
+  color: #2E2E2E;
+  line-height: 34px;
+
+  &--modal {
+    margin-bottom: 10px;
+  }
+}
+
+.present__svg-1 {
+  position: absolute;
+  right: -20px;
+  top: 46%;
+}
+
+.present__svg-2 {
+  display: none;
+}
+
+@media #{$tablet-widths-v} {
+  .present {
+    padding-bottom: 85px;
+  }
+
+  .present__wrap {
+    display: flex;
+
+    width: 728px;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    background-image: url("../img/Intersect-v.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 40% 100%;
+  }
+
+  .present__15 {
+    width: 293px;
+    padding-top: 50px;
+    margin-left: -30px;
+  }
+
+  .present__text-15 {
+    margin-bottom: 50px;
+    margin-left: -30px;
+
+    font-size: 116px;
+    text-align: center;
+  }
+
+  .present__text-1 {
+    font-size: 32px;
+    line-height: 47px;
+  }
+
+  .present__text-2 {
+    font-size: 32px;
+    line-height: 47px;
+  }
+
+  .present__profile {
+    width: 435px;
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+
+  .present__profile-text {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 47px;
+
+    &--modal {
+      margin-bottom: 0;
+    }
+  }
+
+  .present__svg-1 {
+    display: none;
+  }
+
+  .present__svg-2 {
+    display: block;
+
+    position: absolute;
+    right: 20px;
+    top: 47%;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .present {
+    padding-bottom: 80px;
+  }
+
+  .present .container {
+    background: url("../img/present.png") 0 100% no-repeat,
+                url("../img/present.png") 100% 100% no-repeat;
+  }
+
+  .present__wrap {
+    width: 800px;
+    margin-left: 90px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    background-color: #ffffff;
+  }
+
+  .present__15 {
+    width: 293px;
+    padding-top: 40px;
+    margin-left: 0px;
+  }
+
+  .present__profile {
+    padding-left: 65px;
+  }
+
+  .present__svg-2 {
+    right: 10px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .present {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+
+  .present .container {
+    background: url("../img/present.png") 5% 100% no-repeat,
+                url("../img/present.png") 95% 100% no-repeat;
+  }
+
+  .present__wrap {
+    margin-left: 170px;
+    padding-top: 50px;
+  }
+
+  .present__15 {
+    padding-top: 45px;
+  }
+}

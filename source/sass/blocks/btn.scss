@@ -16,7 +16,7 @@
 
   border: none;
   outline: none;
-  border-radius: 6px;
+  border-radius: 24px;
 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
 
@@ -27,13 +27,15 @@
   }
 
   &:active {
+    background-color: #C10404;
+
     box-shadow: none;
   }
 
   &:disabled {
     box-shadow: none;
 
-    border: dashed 1px #CBCBCB;
+    border: dashed 1px $color-btn;
 
     opacity: 0.5;
   }
@@ -53,18 +55,132 @@
   background-repeat: no-repeat;
   background-size: 25%;
 
-  border-radius: 24px;
-
   &:hover {
-    background-size: 35%;
+    background-size: 30%;
     background-position: 70%;
 
     transition: background-size 0.4s ease-out 0.2s, background-position 0.4s ease-out 0.2s;
+  }
+
+  &--modal {
+    width: 50px;
   }
 }
 
 .btn__help span {
   display: none;
+}
+
+.btn__services {
+  position: absolute;
+  bottom: 40px;
+  z-index: 3;
+
+  width: 185px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  color: #2E2E2E;
+  font-size: 18px;
+  font-weight: 700;
+
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('../img/svg/arrow-red.svg');
+  background-position: 10%;
+  background-repeat: no-repeat;
+
+  border: 1px solid #FF0000;
+
+  &:hover {
+    background-position: 90%;
+
+    transition: background-position 0.4s ease-out 0.2s;
+  }
+}
+
+.btn__services:hover span {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+  margin-left: -5px;
+
+  font-size: 18px;
+  text-transform: none;
+  line-height: 10px;
+}
+
+.btn__services:hover span {
+  margin-left: 5px;
+
+  transition: margin-left 0.4s ease-out 0.2s;
+}
+
+.btn__present {
+  display: inline-block;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+
+  text-transform: lowercase;
+  letter-spacing: 0px;
+  font-size: 18px;
+  text-align: center;
+
+  background-image: url('../img/arrow-white.png');
+  background-position: 10%;
+  background-repeat: no-repeat;
+
+  border-radius: 24px;
+
+  &:hover {
+    padding-left: 0;
+    padding-right: 10px;
+
+    background-position: 95%;
+    background-repeat: no-repeat;
+
+    transition: background-position 0.4s ease-out 0.2s, padding-left 0.4s ease-out 0.2s, padding-right 0.4s ease-out 0.2s;
+  }
+}
+
+.btn__modal {
+  display: inline-block;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+
+  text-transform: none;
+  letter-spacing: -2px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #545454;
+
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url('../img/svg/arrow-gray.svg');
+  background-position: 10%;
+  background-repeat: no-repeat;
+
+  border: 1px solid #545454;
+  border-radius: 24px;
+
+  &:hover {
+    padding-left: 0;
+    padding-right: 10px;
+
+    background-position: 95%;
+    background-repeat: no-repeat;
+
+    transition: background-position 0.4s ease-out 0.2s, padding-left 0.4s ease-out 0.2s, padding-right 0.4s ease-out 0.2s;
+  }
 }
 
 @media #{$tablet-widths-v} {
@@ -92,6 +208,10 @@
 
       transition: background-position 0.4s ease-out 0.2s;
     }
+
+    &--modal {
+      width: 220px;
+    }
   }
 
   .btn__help span {
@@ -112,6 +232,19 @@
 
     transition: margin-left 0.4s ease-out 0.2s;
   }
+
+  .btn__services {
+    width: 190px;
+  }
+
+  .btn__present {
+    width: 250px;
+    margin-left: -80px;
+  }
+
+  .btn__modal {
+    margin-left: 20px;
+  }
 }
 
 @media #{$tablet-widths-h} {
@@ -120,6 +253,20 @@
     right: 180px;
     top: 0;
 
+    width: 220px;
+
+    &--modal {
+      right: 90px;
+    }
+  }
+
+  .btn__modal {
+    width: 330px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .btn__services {
     width: 220px;
   }
 }

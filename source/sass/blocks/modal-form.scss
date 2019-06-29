@@ -1,0 +1,188 @@
+.modal-form__overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-form__wrapper {
+  position: relative;
+}
+
+.modal__svg-1 {
+  position: absolute;
+  right: -20px;
+  top: 60px;
+}
+
+.modal__svg-2 {
+  display: none;
+}
+
+.modal-form {
+  display: none;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+
+  width: 300px;
+  margin-top: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+
+  border: 2px solid #FF0000;
+  border-radius: 21px;
+}
+
+.modal-form__text {
+  color: #444444;
+  font-size: 28px;
+  line-height: 37px;
+
+  &--1 {
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  &--2 {
+    margin: 0;
+
+    font-size: 20px;
+  }
+
+  &--3 {
+    margin: 0;
+  }
+}
+
+.modal-form__box {
+  margin-top: 35px;
+}
+
+.modal-form__box-label {
+  color: #ffffff;
+}
+
+.modal-form__close {
+  position: absolute;
+  top: -60px;
+  right: -5px;
+  z-index: 5;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.modal-form__close {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    width: 38px;
+    height: 2px;
+
+    background-color: #545454;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media #{$tablet-widths-v} {
+  .modal-form {
+    width: 600px;
+    padding: 40px;
+  }
+
+  .modal__svg-1 {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+
+    transform: rotate(50deg);
+  }
+
+  .modal-form__close {
+    position: absolute;
+    top: -40px;
+    right: -20px;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .modal-form {
+    width: 758px;
+    padding: 80px;
+  }
+
+  .modal-form__text {
+    color: #444444;
+    font-size: 34px;
+    line-height: 37px;
+
+    &--1 {
+      margin: 0;
+      margin-top: 50px;
+    }
+
+    &--2 {
+      margin: 0;
+
+      font-size: 24px;
+    }
+
+    &--3 {
+      margin: 0;
+    }
+  }
+
+  .modal__svg-1 {
+    display: none;
+  }
+
+  .modal__svg-2 {
+    display: block;
+
+    position: absolute;
+    right: -10px;
+    top: 20px;
+  }
+
+  .modal-form__close {
+    position: absolute;
+    top: -80px;
+    right: -40px;
+  }
+}
