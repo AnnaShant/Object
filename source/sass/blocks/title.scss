@@ -2,17 +2,54 @@
   font-size: 24px;
   font-weight: 700;
   color: #2E2E2E;
+  line-height: 130%;
+}
+
+.title__investments {
+  margin: 0;
+  margin-top: 17px;
+  margin-bottom: 10px;
+}
+
+.title__do-investments {
+  margin: 0;
+  margin-bottom: 10px;
+
+  line-height: 130%;
+}
+
+.title__advantages {
+  margin-top: 30px;
+
+  font-size: 24px;
+  line-height: 130%;
+}
+
+.title__work {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.title__services {
+  margin: 0;
+
+  line-height: 180%;
+  letter-spacing: -0.05em;
 }
 
 .title__present {
   margin: 0;
+
+  line-height: 180%;
+  letter-spacing: -0.05em;
 }
 
 .title__page-footer {
   margin-top: 25px;
 
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  line-height: 23px;
   color: #444444;
   text-transform: uppercase;
 }
@@ -24,14 +61,75 @@
 
   .title__services {
     padding-top: 10px;
+
+    letter-spacing: 0;
+  }
+
+  .title__investments {
+    margin-top: 38px;
+    padding-right: 30px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .title__do-investments {
+    margin-bottom: 30px;
+  }
+
+  .title__get-investment {
+    margin-bottom: 30px;
+  }
+
+  .title__advantages {
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   .title__present {
+    margin: 0;
+    margin-top: -10px;
+
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0;
     text-align: center;
   }
 
   .title__page-footer {
+    margin-bottom: 10px;
+
     font-size: 14px;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .title__investments {
+    margin-top: 12px;
+  }
+
+  .title__get-investment {
+    margin-bottom: 50px;
+  }
+
+  .title__work {
+    margin-bottom: 30px;
+
+    font-size: 32px;
+  }
+
+  .title__advantages {
+    margin-right: 400px;
+  }
+
+  .title__present {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .title__page-footer {
+    margin-top: 28px;
+    margin-bottom: 15px;
   }
 }
 

@@ -37,7 +37,11 @@
 
     border: dashed 1px $color-btn;
 
+    background-color: #C10404;
+
     opacity: 0.5;
+
+    cursor: default;
   }
 }
 
@@ -51,15 +55,38 @@
   padding-bottom: 24px;
 
   background-image: url('../img/arrow-white.png');
-  background-position: center;
+  background-position: 55%;
   background-repeat: no-repeat;
-  background-size: 25%;
+  background-size: 20%;
+
+  border-radius: 24px;
 
   &:hover {
-    background-size: 30%;
-    background-position: 70%;
+    background-image: url('../img/arrow-white-h.png');
+    background-position: 30%;
+    background-repeat: no-repeat;
 
-    transition: background-size 0.4s ease-out 0.2s, background-position 0.4s ease-out 0.2s;
+    transition: background-position 0.4s ease-out 0.2s;
+  }
+
+  &:active {
+    background-color: #C10404;
+
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px $color-btn;
+
+    background-color: #C10404;
+    background-position: 30%;
+    background-image: url('../img/arrow-white.png');
+
+    opacity: 0.5;
+
+    cursor: default;
   }
 
   &--modal {
@@ -73,47 +100,63 @@
 
 .btn__services {
   position: absolute;
-  bottom: 40px;
+  bottom: 34px;
+  left: 15px;
   z-index: 3;
 
   width: 185px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  text-transform: lowercase;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 
   color: #2E2E2E;
-  font-size: 18px;
-  font-weight: 700;
 
   background-color: rgba(255, 255, 255, 0);
   background-image: url('../img/svg/arrow-red.svg');
-  background-position: 10%;
+  background-position: 15%;
   background-repeat: no-repeat;
 
   border: 1px solid #FF0000;
 
   &:hover {
-    background-position: 90%;
+    background-position: 20%;
 
-    transition: background-position 0.4s ease-out 0.2s;
+    transition: background-position 0.2s ease-out 0.1s;
+  }
+
+  &:active {
+    background-color: #C10404;
+
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px $color-btn;
+
+    color: #ffffff;
+
+    background-position: 20%;
+    background-color: #C10404;
+    background-image: url('../img/arrow-white.png');
+
+    opacity: 0.5;
+
+    cursor: default;
   }
 }
 
-.btn__services:hover span {
-  display: inline-block;
+.btn__services span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
 
-  margin: 0;
-  padding: 0;
-  margin-left: -5px;
-
-  font-size: 18px;
-  text-transform: none;
-  line-height: 10px;
-}
-
-.btn__services:hover span {
-  margin-left: 5px;
-
-  transition: margin-left 0.4s ease-out 0.2s;
+  width: 110px;
 }
 
 .btn__present {
@@ -127,7 +170,6 @@
   padding-left: 20px;
 
   text-transform: lowercase;
-  letter-spacing: 0px;
   font-size: 18px;
   text-align: center;
 
@@ -146,6 +188,36 @@
 
     transition: background-position 0.4s ease-out 0.2s, padding-left 0.4s ease-out 0.2s, padding-right 0.4s ease-out 0.2s;
   }
+
+  &:active {
+    background-color: #C10404;
+
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px $color-btn;
+
+    background-color: #C10404;
+    background-position: 5%;
+    background-image: url('../img/arrow-white.png');
+
+    opacity: 0.5;
+
+    cursor: default;
+  }
+
+  &--presentation {
+    background-position: 5%;
+  }
+
+  &--presentation:hover {
+    padding-right: 20px;
+
+    background-position: 95%;
+  }
 }
 
 .btn__modal {
@@ -156,11 +228,10 @@
   padding: 0;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 20px;
+  padding-left: 30px;
 
   text-transform: none;
-  letter-spacing: -2px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #545454;
 
@@ -176,10 +247,34 @@
     padding-left: 0;
     padding-right: 10px;
 
+    background-image: url('../img/arrow-white.png');
     background-position: 95%;
     background-repeat: no-repeat;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    color: #ffffff;
 
     transition: background-position 0.4s ease-out 0.2s, padding-left 0.4s ease-out 0.2s, padding-right 0.4s ease-out 0.2s;
+  }
+
+  &:active {
+    background-color: #C10404;
+
+    box-shadow: none;
+  }
+
+  &:disabled {
+    box-shadow: none;
+
+    border: dashed 1px $color-btn;
+
+    background-color: #C10404;
+    background-position: 10%;
+    background-image: url('../img/arrow-white.png');
+
+    opacity: 0.5;
+
+    cursor: default;
   }
 }
 
@@ -189,7 +284,7 @@
     right: 60px;
     top: 0;
 
-    width: 220px;
+    width: 210px;
     padding-top: 14px;
     padding-bottom: 14px;
 
@@ -221,9 +316,8 @@
     padding: 0;
     margin-left: -10px;
 
-    font-size: 18px;
+    font-size: 16px;
     text-transform: none;
-    letter-spacing: -1px;
     line-height: 10px;
   }
 
@@ -235,15 +329,23 @@
 
   .btn__services {
     width: 190px;
+
+    left: 25px;
   }
 
   .btn__present {
     width: 250px;
     margin-left: -80px;
+
+    &--presentation {
+      margin-left: 0;
+    }
   }
 
   .btn__modal {
     margin-left: 20px;
+
+    font-size: 18px;
   }
 }
 
@@ -260,6 +362,20 @@
     }
   }
 
+  .btn__present {
+    width: 250px;
+    margin-left: -80px;
+
+    &--presentation {
+      width: 280px;
+      margin-left: 0;
+    }
+  }
+
+  .btn__services {
+    left: 13px;;
+  }
+
   .btn__modal {
     width: 330px;
   }
@@ -268,5 +384,9 @@
 @media #{$desktop-widths} {
   .btn__services {
     width: 220px;
+  }
+
+  .btn__services span {
+    right: 40px;
   }
 }

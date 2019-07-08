@@ -1,11 +1,11 @@
 .present {
-  padding-top: 40px;
-  padding-bottom: 73px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .present__wrap {
   width: 300px;
-  margin-top: 20px;
+  margin-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
@@ -22,31 +22,32 @@
 }
 
 .present__15 {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 
   color: $color-btn;
 }
 
 .present__text-15 {
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 6px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 80px;
-  line-height: 20px;
+  line-height: 97%;
 }
 
 .present__text-1 {
   margin: 0;
 
   text-transform: lowercase;
+  line-height: 150%;
 }
 
 .present__text-2 {
   margin: 0;
 
   text-transform: uppercase;
+  line-height: 150%;
 }
 
 .present__profile {
@@ -59,7 +60,7 @@
   font-size: 22px;
   font-weight: 400;
   color: #2E2E2E;
-  line-height: 34px;
+  line-height: 150%;
 
   &--modal {
     margin-bottom: 10px;
@@ -68,26 +69,38 @@
 
 .present__svg-1 {
   position: absolute;
-  right: -20px;
-  top: 46%;
+  right: -25px;
+  top: 47%;
+
+  transform: rotate(15deg);
 }
 
 .present__svg-2 {
   display: none;
 }
 
+.present__svg {
+  opacity: 0;
+}
+
+.present__wrap:hover .present__svg {
+  opacity: 1;
+
+  transition: opacity 0.4s ease-out 0.3s;
+}
+
 @media #{$tablet-widths-v} {
   .present {
-    padding-bottom: 85px;
+    padding-bottom: 80px;
   }
 
   .present__wrap {
     display: flex;
 
     width: 728px;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    margin-top: 57px;
+    padding-top: 43px;
+    padding-bottom: 40px;
 
     background-image: url("../img/Intersect-v.png");
     background-repeat: no-repeat;
@@ -102,27 +115,31 @@
   }
 
   .present__text-15 {
-    margin-bottom: 50px;
+    margin-bottom: 0;
     margin-left: -30px;
 
     font-size: 116px;
+    line-height: 97%;
     text-align: center;
   }
 
   .present__text-1 {
+    margin-bottom: 12px;
+
     font-size: 32px;
-    line-height: 47px;
+    line-height: 140%;
   }
 
   .present__text-2 {
     font-size: 32px;
-    line-height: 47px;
+    line-height: 97%;
   }
 
   .present__profile {
     width: 435px;
     padding-left: 45px;
     padding-right: 35px;
+    padding-top: 10px;
   }
 
   .present__profile-text {
@@ -146,13 +163,14 @@
     display: block;
 
     position: absolute;
-    right: 20px;
-    top: 47%;
+    right: 13px;
+    top: 51%;
   }
 }
 
 @media #{$tablet-widths-h} {
   .present {
+    padding-top: 0;
     padding-bottom: 80px;
   }
 
@@ -163,21 +181,22 @@
 
   .present__wrap {
     width: 800px;
-    margin-left: 90px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    margin-left: 80px;
+    padding-top: 45px;
+    padding-bottom: 35px;
 
     background-color: #ffffff;
   }
 
   .present__15 {
     width: 293px;
-    padding-top: 40px;
-    margin-left: 0px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .present__profile {
     padding-left: 65px;
+    padding-top: 10px;
   }
 
   .present__svg-2 {
@@ -188,7 +207,7 @@
 @media #{$desktop-widths} {
   .present {
     padding-top: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
   }
 
   .present .container {

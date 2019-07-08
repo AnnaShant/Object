@@ -1,0 +1,192 @@
+.presentation {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.presentation__wrap {
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 35px;
+
+  text-align: center;
+
+  border: 2px solid #FF0000;
+  border-radius: 21px;
+}
+
+.presentation__profile {
+  position: relative;
+}
+
+.presentation__profile-text {
+  margin: 0;
+  margin-top: 10px;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: #2E2E2E;
+  line-height: 150%;
+}
+
+.presentation__input {
+  margin-bottom: 17px;
+  padding-bottom: 13px;
+  padding-top: 13px;
+}
+
+.presentation__svg {
+  opacity: 0;
+}
+
+.presentation__wrap:hover .presentation__svg {
+  opacity: 1;
+
+  transition: opacity 0.4s ease-out 0.3s;
+}
+
+.presentation__svg-1 {
+  position: absolute;
+  right: -35px;
+  top: 37%;
+
+  transform: rotate(15deg);
+}
+
+.presentation__svg-2 {
+  display: none;
+}
+
+@media #{$tablet-widths-v} {
+  .presentation {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .presentation__wrap {
+    display: flex;
+
+    width: 728px;
+    padding-top: 43px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .presentation__img {
+    width: 220px;
+    height: 305px;
+  }
+
+  .presentation__profile {
+    width: 435px;
+    padding-left: 30px;
+  }
+
+  .presentation__profile-text {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 32px;
+    line-height: 150%;
+    text-align: left;
+    font-weight: 700;
+  }
+
+  .presentation__svg-1 {
+    display: none;
+  }
+
+  .presentation__svg-2 {
+    display: block;
+
+    position: absolute;
+    right: 20px;
+    top: 37%;
+
+    transform: rotate(10deg);
+  }
+
+  .presentation__form {
+    margin-left: -120px;
+  }
+
+  .presentation__input {
+    width: 250px;
+    margin-left: 0;
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .presentation {
+    padding-bottom: 80px;
+  }
+
+  .presentation__wrap {
+    width: 820px;
+    margin-left: 80px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    background-color: #ffffff;
+  }
+
+  .presentation__img-wrap {
+    margin-left: 20px;
+  }
+
+  .presentation__img {
+    width: 245px;
+    height: 329px;
+  }
+
+  .presentation__profile {
+    width: 400px;
+    padding-left: 35px;
+  }
+
+  .presentation__form {
+    margin-left: -87px;
+  }
+
+  .presentation__input {
+    width: 280px;
+    margin-top: 10px;
+    margin-bottom: 27px;
+  }
+
+  .presentation__svg-2 {
+    right: -10px;
+
+    &--institutions {
+      left: 300px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .presentation {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  .presentation__wrap {
+    width: 830px;
+
+    margin-left: 155px;
+    padding-top: 50px;
+  }
+
+  .presentation__img-wrap {
+    padding-top: 5px;
+  }
+
+  .presentation__form {
+    margin-left: -77px;
+  }
+
+  .presentation__input {
+    margin-top: 5px;
+  }
+}

@@ -3,31 +3,61 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
+    <meta name="description" content="Привлекаем до 100 млн. руб. инвестиций в иннвоационные компании развивающие экономику РФ">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:title" content="Единое окно субсидирования инновационных проектов | Траектория Развития">
+    <meta property="og:description" content="Привлекаем до 100 млн. руб. инвестиций в иннвоационные компании развивающие экономику РФ">
+    <meta property="og:url" content="http://tr2b.ru">
+    <meta property="og:image" content="http://tr2b.ru/pic/og/og_head.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:width" content="1200">
+    <title>Привлекаем до 100 млн. руб. инвестиций | Траектория Развития</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="pic/icon/favicon.ico" type="pic/ico">
     <link rel="stylesheet" href="vendor/slick/slick.css">
     <link rel="stylesheet" href="vendor/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-T9B54HJ');</script>
+    <!-- End Google Tag Manager -->
     <script src="js/picturefill.min.js" async=""></script>
+    <style>
+      .modal-form {
+        max-height: 90vh;
+      }
+      .modal-form--privacy-policy .modal-form__content {
+        overflow-y: auto;
+        max-height: 75vh;
+        margin-right: -38px;
+      }
+      .modal-form--privacy-policy #header,
+      .modal-form--privacy-policy #footer {
+        display: none;
+      }
+      .modal-confirmation {
+        z-index: 10000;
+      }
+    </style>
   </head>
   <body class="page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T9B54HJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header class="page-header" id="header">
       <div class="container">
 
         <div class="page-header__wrap">
           <div class="logo">
-            <a class="logo__link" href="#">
+            <a class="logo__link">
               <picture class="logo__link-picture">
                 <source media="(min-width: 1366px)" srcset="pic/svg/logo-v.svg">
                 <source media="(min-width: 1024px)" srcset="pic/svg/logo-v.svg">
-                <source media="(min-width: 768px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 768px)" srcset="pic/svg/logo-v-1.svg">
                 <img class="logo__img" src="pic/svg/logo-mobile.svg" alt="Logo">
               </picture>
             </a>
-            <div class="logo__wrap">
-              <p class="logo__title">Траектория Развития</p>
-              <p class="logo__text">Единое окно субсидирования инновационных проектов</p>
-            </div>
           </div>
 
           <div class="page-header__phone phone">
@@ -36,10 +66,10 @@
                 <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
                 <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
               </svg>
-              <p class="phone__text-min">Пн-Пт с 9:00 - 22:00</p>
+              <p class="phone__text-min">Пн-Пт с 9:00 - 18:00</p>
               <a class="phone__link" href="tel:+7 (343) 207-51-47">+7 (343) 207-51-47</a>
             </div>
-            <button class="phone__btn btn__opened-1" aria-label="Заказть обратный звонок">Заказать звонок</button>
+            <button class="phone__btn btn__form-opened" aria-label="Заказть обратный звонок">Заказать звонок</button>
           </div>
 
         </div>
@@ -50,32 +80,553 @@
       <section class="help">
         <div class="container">
           <div class="help__box">
-            <h1 class="help__title">Поможем привлечь до 100 млн. руб. инвестиций</h1>
-            <p class="help__text-min">от институтов развития РФ</p>
-
-            <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
-              <label class="help__label"></label>
-              <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
-              <button class="btn btn__help btn__opened-1"><span>Хочу узнать как</span></button>
-            </form>
+            <h1 class="help__title">Привлекаем до&nbsp;100&nbsp;млн. руб. инвестиций</h1>
+            <p class="help__text-min">от&nbsp;институтов развития РФ</p>
 
             <div class="help__wrap-text">
               <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
                 <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
               </svg>
-              <p class="help__text">Мы помогли привлечь более ₽560М инвестиций в компании IT и рынков НТИ</p>
+              <p class="help__text">Мы помогли привлечь более&nbsp;₽560М инвестиций в&nbsp;компании IT&nbsp;и&nbsp;рынков НТИ</p>
             </div>
+
+            <form class="help__form form" id="help__form">
+              <input type="hidden" name="subject" value="форма из первого окна">
+              <label class="help__label" for="phone"></label>
+              <input class="help__input input-phone" name="phone" id="phone" type="tel" placeholder="+7 (___) ___-__ -__" required="" title="Введите номер в указаном формате: +7 909 000 33 33" im-insert="true">
+              <button class="btn btn__help btn__opened-1" type="submit" for="help__form"><span>Хочу узнать как</span></button>
+            </form>
+
           </div>
 
           <div class="help__block">
             <picture class="help__picture">
-              <source media="(min-width: 2500px)" srcset="pic/svg/header-img-d-3.svg">
               <source media="(min-width: 1600px)" srcset="pic/svg/header-img-d-2.svg">
               <source media="(min-width: 1366px)" srcset="pic/svg/header-img-d.svg">
               <source media="(min-width: 1024px)" srcset="pic/svg/header-img-h.svg">
-              <img class="help__img" src="pic/svg/header-img-v.svg" alt="Деталь">
+              <img class="help__img" src="pic/svg/header-img-v.svg" alt="Фон">
             </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="investments">
+        <div class="container">
+          <h2 class="title title__investments">Инвестиции&nbsp;доступны для&nbsp;компаний</h2>
+
+          <div class="investments__wrap">
+
+            <div class="investments__wrap-box">
+              <div class="investments__block">
+                <h3 class="investments__title investments__title--1">01 Экспортеры</h3>
+              </div>
+            </div>
+
+            <div class="investments__wrap-box">
+              <div class="investments__block">
+                <h3 class="investments__title investments__title--1">02 IT компании</h3>
+              </div>
+            </div>
+
+            <div class="investments__wrap-box">
+              <div class="investments__block">
+                <h3 class="investments__title">03 Инновационные компании</h3>
+              </div>
+            </div>
+
+            <div class="investments__wrap-box">
+              <div class="investments__block">
+                <h3 class="investments__title">04 Работающие&nbsp;на&nbsp;рынках НТИ</h3>
+
+                <a class="investments__btn" id="investmentsBtn" href="javascript:void(0)" onclick="showHide('block_id')">Скрыть/Открыть</a>
+
+                <ul class="investments__list" id="block_id">
+
+                  <li class="investments__text">Аэронет</li>
+                  <li class="investments__text">Автонет</li>
+                  <li class="investments__text">Маринет</li>
+                  <li class="investments__text">Нейронет</li>
+                  <li class="investments__text">Хелснет</li>
+                  <li class="investments__text">Фуднет</li>
+                  <li class="investments__text">Энерджинет</li>
+                  <li class="investments__text">Технет</li>
+                  <li class="investments__text">Сэйфнет</li>
+                  <li class="investments__text">Финнет</li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="investments__wrap-box">
+              <div class="investments__block investments__block--nti">
+                <h3 class="investments__title">05 Компании развивающие сквозные технологии НТИ</h3>
+
+                <a class="investments__btn" href="javascript:void(0)" onclick="showHide('block_id2')">Скрыть/Открыть</a>
+
+                <ul class="investments__list investments__list--nti" id="block_id2">
+
+                  <li class="investments__text">Большие данные</li>
+                  <li class="investments__text">Искусственный интеллект</li>
+                  <li class="investments__text">Системы распределенного реестра</li>
+                  <li class="investments__text">Квантовые технологии</li>
+                  <li class="investments__text">Новые&nbsp;и&nbsp;портативные источники энергии</li>
+                  <li class="investments__text">Новые производственные технологии</li>
+                  <li class="investments__text">Сенсорика&nbsp;и&nbsp;компоненты робототехники</li>
+                  <li class="investments__text">Технологии беспроводной связи</li>
+                  <li class="investments__text">Технологии управления свойствами&nbsp;биологических объектов</li>
+                  <li class="investments__text">Нейротехнологии, технологии виртуальной&nbsp;и дополненной реальностей</li>
+
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="do-investments">
+        <div class="container">
+          <h2 class="title title__do-investments">Откуда беруться инвестиции?</h2>
+
+          <div class="do-investments__wrap">
+
+            <p class="do-investments__block-text">
+              <span>Гоударство выделило 25,7 трлн. ₽</span>&nbsp;до 2024&nbsp;на 12 национальных проектов для стратегического развития экономики&nbsp;РФ.
+              В&nbsp;них&nbsp;входят направления Экспорт, Наука, Цифровая экономика другие.
+            </p>
+
+            <div class="do-investments__box">
+
+              <div>
+
+                <div class="do-investments__circle">
+                  <picture class="do-investments__picture">
+                    <source media="(min-width: 1024px)" srcset="img/svg/circle-1-h.svg">
+                    <img class="do-investments__img" src="img/svg/circle-1.svg" alt="Circle">
+                  </picture>
+                </div>
+
+                <div class="do-investments__wrap-line">
+                  <div class="do-investments__block">
+                    <div class="do-investments__box-1">
+                      <p class="do-investments__text do-investments__text--1"><span>1.</span> Экспорт – 3,7%</p>
+                      <svg class="do-investments__svg do-investments__svg--m" width="195" height="32" viewBox="0 0 195 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999997 31.0001L24 0.500127L195 0.5" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--h" width="377" height="107" viewBox="0 0 377 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 106L36.5 0.5H377" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--d" width="601" height="107" viewBox="0 0 601 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.499512 106L140 0.5H601" stroke="#FF0000"/>
+                      </svg>
+                    </div>
+                    <div class="do-investments__box-2">
+                      <p class="do-investments__text do-investments__text--2"><span>2.</span> Наука – 2,4%</p>
+                      <svg class="do-investments__svg do-investments__svg--m" width="190" height="2" viewBox="0 0 190 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1L190 1.00002" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--h" width="367" height="2" viewBox="0 0 367 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.5 1.5L367 1" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--d" width="592" height="3" viewBox="0 0 592 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.499023 1.5L591 1.5" stroke="#FF0000"/>
+                      </svg>
+                    </div>
+                    <div class="do-investments__box-3">
+                      <p class="do-investments__text do-investments__text--3"><span>3.</span> Цифровая экономика – 6,4%</p>
+                      <svg class="do-investments__svg do-investments__svg--m" width="195" height="32" viewBox="0 0 195 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.999997 31.0001L24 0.500127L195 0.5" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--h" width="376" height="134" viewBox="0 0 376 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L38.4103 133H376" stroke="#FF0000"/>
+                      </svg>
+                      <svg class="do-investments__svg do-investments__svg--d" width="601" height="107" viewBox="0 0 601 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.499512 106L140 0.5H601" stroke="#FF0000"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <ul class="do-investments__list">
+                <li class="do-investments__item">
+                  <p class="do-investments__list-title"><span>1.</span> Экспорт 956,8 млрд. ₽</p>
+                  <p class="do-investments__list-text">Из&nbsp;них субсидий&nbsp;и&nbsp;гранты 343,2 млрд.₽</p>
+                </li>
+                <li class="do-investments__item">
+                  <p class="do-investments__list-title do-investments__list-title--2"><span>2.</span> Наука 616,8 млрд. ₽</p>
+                  <p class="do-investments__list-text">Из&nbsp;них субсидий&nbsp;и&nbsp;гранты 207 млрд.₽</p>
+                </li>
+                <li class="do-investments__item">
+                  <p class="do-investments__list-title do-investments__list-title--3"><span>3.</span> Цифровая экономика <b>1634,9</b> ₽</p>
+                  <p class="do-investments__list-text do-investments__list-text--3">Из&nbsp;них субсидий&nbsp;и&nbsp;гранты 607 млрд.₽</p>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="presentation">
+        <div class="container">
+          <div class="presentation__wrap">
+            <div class="presentation__img-wrap">
+              <picture class="presentation__pic">
+                <source media="(min-width: 768px)" srcset="img/file.png">
+                <img class="presentation__img" src="img/file-mob.png" alt="Файл">
+              </picture>
+            </div>
+            <div class="presentation__profile">
+              <p class="presentation__profile-text">
+                Скачайте презентацию с&nbsp;подробным&nbsp;описанием выделенных средств
+              </p>
+              <svg class="presentation__svg presentation__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
+              </svg>
+              <svg class="presentation__svg presentation__svg-2" width="102" height="111" viewBox="0 0 102 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66.5697 1.67826C66.1158 1.36358 65.4928 1.47641 65.1781 1.93028C64.8634 2.38415 64.9762 3.00718 65.4301 3.32186L66.5697 1.67826ZM21.1981 96.9024C20.868 97.3452 20.9594 97.9718 21.4022 98.3019L28.618 103.681C29.0608 104.011 29.6873 103.919 30.0174 103.477C30.3475 103.034 30.2561 102.407 29.8133 102.077L23.3993 97.296L28.1805 90.882C28.5106 90.4392 28.4192 89.8127 27.9764 89.4826C27.5336 89.1525 26.9071 89.2439 26.577 89.6867L21.1981 96.9024ZM65.4301 3.32186C74.5734 9.66112 79.3617 18.1633 80.7054 27.4709C82.0528 36.8042 79.9421 47.0058 75.1655 56.6821C65.6028 76.0542 45.4861 93.0642 21.8556 96.5106L22.1442 98.4896C46.5132 94.9355 67.1465 77.4453 76.9589 57.5674C81.8699 47.6188 84.103 37.0079 82.6849 27.1851C81.263 17.3365 76.1764 8.33882 66.5697 1.67826L65.4301 3.32186Z" fill="#FF0000"/>
+              </svg>
+              <form class="help__form presentation__form form" id="presentation__form">
+                <input type="hidden" name="subject" value="Скачайте презентацию с подробным описанием выделенных средств">
+                <label class="help__label" for="phone"></label>
+                <input class="help__input presentation__input" name="email" id="email" type="email" placeholder="youemail@mail.ru" required="" title="Введите e-mail в указаном формате: youemail@mail.ru">
+                <button class="btn btn__present btn__present--presentation" type="submit" for="presentation__form"><span>Получить презентацию</span></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="get-investment">
+        <div class="container">
+          <h1 class="title title__get-investment">Как получить инвестиции?</h1>
+
+          <div class="get-investment__wrap">
+            <div class="get-investment__circle get-investment__circle-1">
+              <picture class="get-investment__picture">
+                <source media="(min-width: 1024px)" srcset="img/svg/circle-2-h.svg">
+                <img class="do-investment__img" src="img/svg/circle-2.svg" alt="Circle">
+              </picture>
+              <p class="get-investment__text">более <span>500</span> программ финасирования</p>
+            </div>
+
+            <div class="get-investment__circle get-investment__circle-2">
+              <picture class="get-investment__picture">
+                <source media="(min-width: 1024px)" srcset="img/svg/circle-3-h.svg">
+                <img class="do-investment__img" src="img/svg/circle-3.svg" alt="Circle">
+              </picture>
+              <p class="get-investment__text">в <span>108</span> институтах развития</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="institutions">
+        <div class="container">
+          <div class="institutions__presentation__wrap presentation__wrap">
+            <div class="presentation__img-wrap">
+              <picture class="presentation__pic">
+                <source media="(min-width: 768px)" srcset="img/file.png">
+                <img class="presentation__img" src="img/file-mob.png" alt="Файл">
+              </picture>
+            </div>
+            <div class="presentation__profile presentation__profile">
+              <p class="presentation__profile-text">
+                Скачайте&nbsp;полный&nbsp;список фондов&nbsp;и институтов развития
+              </p>
+              <svg class="presentation__svg presentation__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
+              </svg>
+              <svg class="presentation__svg presentation__svg-2 presentation__svg-2--institutions" width="102" height="111" viewBox="0 0 102 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M66.5697 1.67826C66.1158 1.36358 65.4928 1.47641 65.1781 1.93028C64.8634 2.38415 64.9762 3.00718 65.4301 3.32186L66.5697 1.67826ZM21.1981 96.9024C20.868 97.3452 20.9594 97.9718 21.4022 98.3019L28.618 103.681C29.0608 104.011 29.6873 103.919 30.0174 103.477C30.3475 103.034 30.2561 102.407 29.8133 102.077L23.3993 97.296L28.1805 90.882C28.5106 90.4392 28.4192 89.8127 27.9764 89.4826C27.5336 89.1525 26.9071 89.2439 26.577 89.6867L21.1981 96.9024ZM65.4301 3.32186C74.5734 9.66112 79.3617 18.1633 80.7054 27.4709C82.0528 36.8042 79.9421 47.0058 75.1655 56.6821C65.6028 76.0542 45.4861 93.0642 21.8556 96.5106L22.1442 98.4896C46.5132 94.9355 67.1465 77.4453 76.9589 57.5674C81.8699 47.6188 84.103 37.0079 82.6849 27.1851C81.263 17.3365 76.1764 8.33882 66.5697 1.67826L65.4301 3.32186Z" fill="#FF0000"/>
+              </svg>
+              <form class="help__form presentation__form form" id="lists__form">
+                  <input type="hidden" name="subject" value="Скачайте полный список фондов и институтов развития">
+                <label class="help__label" for="phone"></label>
+                <input class="help__input presentation__input" name="email" id="email" type="email" placeholder="youemail@mail.ru" required="" title="Введите e-mail в указаном формате: youemail@mail.ru">
+                <button class="btn btn__present btn__present--presentation" type="submit" for="lists__form"><span>Получить презентацию</span></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="institutions__wrap-text help__wrap-text">
+            <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="3" cy="8" r="3" fill="#FF0000"></circle>
+              <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"></path>
+            </svg>
+            <p class="institutions__text help__text">Для&nbsp;успешного развится компании, нужно иметь
+              “Траекторию развития”&nbsp;с помощью гос. программ&nbsp;и следовать&nbsp;по&nbsp;ней.
+              Сосотавить траекторию можно самотстоятельно,&nbsp;а можно обратиться&nbsp;к&nbsp;нам.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container">
+          <h2 class="title title__advantages">Почему вам выгодно заказать траекторию развития компании&nbsp;у&nbsp;нас?</h2>
+
+          <table class="advantages__table">
+            <tr>
+              <th class="advantages__title">Преимущества</th>
+              <th class="advantages__title">tr2b.ru</th>
+              <th class="advantages__title">сами</th>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Не&nbsp;нужно изучить более 1 000 документов</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Не&nbsp;нужно тратить более 3 000 часов&nbsp;на&nbsp;изучение</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Все детали будут учтены&nbsp;при&nbsp;составлении траектории развития по&nbsp;субсидиям</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Можете пропустить какую-то программу финасирования</td>
+              <td class="advantages__text advantages__text--red">-</td>
+              <td class="advantages__text">+</td>
+            </tr>
+            <tr>
+              <th class="advantages__title advantages__text--el">Вы получите документы:</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Анализ национальных&nbsp;и федеральных проектов</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Анализ возможных&nbsp;к участию программ институтов развития РФ.</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+            <tr>
+              <td class="advantages__text advantages__text--el">Выводы, анализ полученной&nbsp;в&nbsp;ходе исследования информации.</td>
+              <td class="advantages__text advantages__text--red">+</td>
+              <td class="advantages__text">-</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="work">
+        <div class="container">
+          <h2 class="title title__work">Как это работает?</h2>
+
+          <div class="work__slider" id="work">
+
+            <div class="work__block work__block--1">
+              <h3 class="work__block-number">1.</h3>
+              <h3 class="work__block-title">Посещение сайта</h3>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--2">
+              <h3 class="work__block-number">2.</h3>
+              <h3 class="work__block-title">Подготовка</h3>
+              <div class="work__wrap-btn present__wrap-btn">
+                <a href="https://vk.cc/9xJ3ix" class="btn btn__present btn__present--anketa" target="_blank"><span>Анкета</span></a>
+              </div>
+              <p class="work__block-text">Заполнить анкету, отправить</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--3">
+              <h3 class="work__block-number">3.</h3>
+              <h3 class="work__block-title">Анализ компании</h3>
+              <p class="work__block-text">Изучаем&nbsp;анкету, делаем предварительное заключение может&nbsp;ли&nbsp;ваша компания получить инвестиции</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--4">
+              <h3 class="work__block-number">4.</h3>
+              <h3 class="work__block-title">Заключение договора</h3>
+              <p class="work__block-text">С вами созванивается специалист&nbsp;и уточняет удобное время встречи</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--5">
+              <h3 class="work__block-number">5.</h3>
+              <h3 class="work__block-title">Разработка траектории развития</h3>
+              <p class="work__block-text">Анализ национальных&nbsp;и федеральных проектов?
+                Программ институтов развития согласно заданию к договору
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--6">
+              <h3 class="work__block-number">6.</h3>
+              <h3 class="work__block-title">Назначаем встречу</h3>
+              <p class="work__block-text">Согласование договора&nbsp;и задания&nbsp;к договору,
+                основываясь&nbsp;на данных&nbsp;в анкете
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--7">
+              <h3 class="work__block-number">7.</h3>
+              <h3 class="work__block-title">Установочная встреча</h3>
+              <p class="work__block-text">Детализация задачи и&nbsp;ожидаемого результата,
+                предоставление вводного пакета документов (устав, бюджет)
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--8">
+              <h3 class="work__block-number">8.</h3>
+              <h3 class="work__block-title">Прием</h3>
+              <p class="work__block-text">Прием результатов деятельности, подписание актов работ</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--9">
+              <h3 class="work__block-number">9.</h3>
+              <h3 class="work__block-title">Сопровождение</h3>
+              <p class="work__block-text">Определяемся нужно&nbsp;ли вам сопровождение</p>
+            </div>
+
+          </div>
+
+          <div class="work__slider work__slider--no-slider">
+
+            <div class="work__block work__block--1">
+              <h3 class="work__block-number">1.</h3>
+              <h3 class="work__block-title">Посещение сайта</h3>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--2">
+              <h3 class="work__block-number">2.</h3>
+              <h3 class="work__block-title">Подготовка</h3>
+              <div class="work__wrap-btn present__wrap-btn">
+                <a href="https://vk.cc/9xJ3ix" class="btn btn__present btn__present--anketa" target="_blank"><span>Анкета</span></a>
+              </div>
+              <p class="work__block-text">Заполнить анкету, отправить</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--3">
+              <h3 class="work__block-number">3.</h3>
+              <h3 class="work__block-title">Анализ компании</h3>
+              <p class="work__block-text">Изучаем анкету, делаем предварительное заключение может
+                ли ваша компания получить инвестиции</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--4">
+              <h3 class="work__block-number">4.</h3>
+              <h3 class="work__block-title">Заключение договора</h3>
+              <p class="work__block-text">С вами созванивается специалист и уточняет удобное время встречи</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--5">
+              <h3 class="work__block-number">5.</h3>
+              <h3 class="work__block-title">Разработка траектории развития</h3>
+              <p class="work__block-text">Анализ национальных и федеральных проектов?
+                Программ институтов развития согласно заданию к договору
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--6">
+              <h3 class="work__block-number">6.</h3>
+              <h3 class="work__block-title">Назначаем встречу</h3>
+              <p class="work__block-text">Согласование договора и задания к договору,
+                основываясь на данных в анкете
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--7">
+              <h3 class="work__block-number">7.</h3>
+              <h3 class="work__block-title">Установочная встреча</h3>
+              <p class="work__block-text">Детализация задачи и ожидаемого результата,
+                предоставление вводного пакета документов (устав, бюджет)
+              </p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--8">
+              <h3 class="work__block-number">8.</h3>
+              <h3 class="work__block-title">Прием</h3>
+              <p class="work__block-text">Прием результатов деятельности, подписание актов работ</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
+            <div class="work__block work__block--9">
+              <h3 class="work__block-number">9.</h3>
+              <h3 class="work__block-title">Сопровождение</h3>
+              <p class="work__block-text">Определяемся нужно ли вам сопровождение</p>
+              <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="3" cy="8" r="3" fill="#FF0000"/>
+                <path d="M3.01277 7.00008C2.46053 6.99303 2.00714 7.43499 2.00008 7.98723C1.99303 8.53947 2.43499 8.99286 2.98723 8.99992L3.01277 7.00008ZM21.6965 8.946C22.092 8.5605 22.1001 7.92739 21.7146 7.53191L15.4325 1.08717C15.047 0.691693 14.4138 0.683605 14.0184 1.06911C13.6229 1.45461 13.6148 2.08773 14.0003 2.48321L19.5844 8.21186L13.8558 13.796C13.4603 14.1815 13.4522 14.8146 13.8377 15.2101C14.2232 15.6056 14.8563 15.6137 15.2518 15.2282L21.6965 8.946ZM2.98723 8.99992L20.9858 9.22984L21.0113 7.23L3.01277 7.00008L2.98723 8.99992Z" fill="#FF0000"/>
+              </svg>
+            </div>
+
           </div>
         </div>
       </section>
@@ -106,8 +657,7 @@
               </svg>
               <p class="services__text">
                   Создаём "Траектории развития" компаний,
-                  основанные на участии в национальных проектах,
-                  а так же других программах институтов развития РФ.
+                  основанные&nbsp;на&nbsp;участии в&nbsp;национальных проектах,&nbsp;а&nbsp;так&nbsp;же других программах институтов развития РФ.
               </p>
               <svg class="services__svg-hand" width="36" height="33" viewBox="0 0 36 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.5687 32C18.0843 32 15.7799 31.4152 14.2568 31.0279C13.5421 30.8462 13.0249 30.7148 12.5568 30.7148H6.38344C6.0823 30.7148 5.83789 30.4935 5.83789 30.2208V18.5877C5.83789 18.3151 6.0823 18.0938 6.38344 18.0938C8.52198 18.0938 10.3747 17.0229 11.8891 14.9109C14.0178 11.9394 15.2715 10.2728 17.5213 7.6461C19.65 5.1626 20.8295 2.43806 21.0412 1.57466L21.1197 1.22792C21.2507 0.624332 21.386 0 22.4967 0C24.6734 0 25.8485 2.27506 25.8485 4.41676C25.8485 5.73852 25.2986 7.51669 24.1682 9.85299C23.7285 10.7628 23.7973 11.397 23.9904 11.6638C24.0864 11.7971 24.2217 11.8594 24.4159 11.8594H33.0759C34.1299 11.969 36.0001 12.7129 36.0001 14.7617C36.0001 16.119 35.4567 16.8757 34.9439 17.2877C35.4501 17.7036 36.0001 18.4287 36.0001 19.6141C36.0001 20.9932 34.9908 21.8625 34.2434 22.3169C34.6296 22.717 35.005 23.3907 35.005 24.4991C35.005 26.0767 33.5189 26.8779 32.5729 27.2286C32.9483 27.8431 33.0214 28.5681 32.8337 29.5639C32.5107 31.2719 29.4404 32 22.5687 32ZM6.92898 29.7269H12.5568C13.1744 29.7269 13.7821 29.881 14.5514 30.0766C16.0178 30.449 18.2338 31.0121 22.5687 31.0121C30.298 31.0121 31.6422 30.0015 31.7568 29.3989C31.975 28.2421 31.7415 27.7443 31.2931 27.3155C31.1589 27.1871 31.112 27.0034 31.1676 26.8344C31.2243 26.6655 31.3749 26.5361 31.5659 26.4956C31.5888 26.4907 33.9117 25.978 33.9117 24.5011C33.9117 23.0282 33.1043 22.7289 33.0705 22.717C32.8621 22.6449 32.717 22.4611 32.7148 22.2586C32.7126 22.0561 32.8392 21.8704 33.0476 21.7934C33.0661 21.7864 34.9079 21.087 34.9079 19.6151C34.9079 18.1452 33.748 17.7352 33.7371 17.7312C33.5135 17.6552 33.3705 17.4576 33.3836 17.2422C33.3967 17.0269 33.5615 16.8441 33.7928 16.7898C33.8299 16.7799 34.9079 16.4727 34.9079 14.7617C34.9079 13.0685 33.0879 12.8522 33.0105 12.8443L24.4159 12.8472C23.8518 12.8472 23.3772 12.619 23.0772 12.2041C22.6058 11.5511 22.6396 10.5504 23.1688 9.45587C24.237 7.247 24.7574 5.59825 24.7574 4.41577C24.7574 2.99324 24.057 0.987868 22.4967 0.987868C22.3308 0.987868 22.2807 1.00664 22.2796 1.00763C22.2741 1.0343 22.2283 1.24768 22.1912 1.41858L22.1072 1.79002C21.8791 2.7196 20.6266 5.63776 18.3844 8.25265C16.1585 10.8517 14.9169 12.5025 12.8056 15.4503C11.2017 17.6858 9.22901 18.8989 6.93007 19.0639V29.7269H6.92898Z" fill="#FF0000"></path>
@@ -115,51 +665,55 @@
               </svg>
             </div>
 
-            <div class="services__block services__block--1">
-              <h3 class="services__block-title">Разработка траектории развития</h3>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            <div class="services__block services__block--1" id="1">
+              <h3 class="services__block-title services__block-title--p">Разработка траектории развития</h3>
+              <a href="#1" class="services__block-link services__block-link--p open-1">Подробнее</a>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 50 000</span></button>
             </div>
 
-            <div class="services__block services__block--2">
-              <h3 class="services__block-title">Разработка траектории развития</h3>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            <div class="services__block services__block--2" id="2">
+              <h3 class="services__block-title">Консультация</h3>
+              <a href="#2" class="services__block-link open-2">Подробнее</a>
+              <button class="btn btn__services btn__form-opened"><span>&#8381; 3 000/час</span></button>
             </div>
           </div>
 
           <div class="services__slider" id="services">
 
-            <div class="services__block services__block--3">
-              <h3 class="services__block-title">Разработка траектории развития</h3>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            <div class="services__block services__block--3" id="3">
+              <h3 class="services__block-title services__block-title--p">Разработка траектории развития</h3>
+              <a href="#3" class="services__block-link services__block-link--p open-1">Подробнее</a>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 50 000</span></button>
             </div>
 
-            <div class="services__block services__block--4">
-              <h3 class="services__block-title">Разработка траектории развития</h3>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 50 000</span></button>
+            <div class="services__block services__block--4" id="4">
+              <h3 class="services__block-title">Консультация</h3>
+              <a href="#4" class="services__block-link open-2">Подробнее</a>
+              <button class="btn btn__services btn__services--3000 btn__form-opened"><span>&#8381; 3 000/час</span></button>
             </div>
 
             <div class="services__block services__block--escort">
               <h3 class="services__block-title">Сопровождение</h3>
               <p class="services__block-text">1 месяц</p>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 30 000</span></button>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 30 000</span></button>
             </div>
 
             <div class="services__block services__block--escort">
               <h3 class="services__block-title">Сопровождение</h3>
               <p class="services__block-text">3 месяц</p>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 80 000</span></button>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 80 000</span></button>
             </div>
 
             <div class="services__block services__block--escort">
               <h3 class="services__block-title">Сопровождение</h3>
               <p class="services__block-text">6 месяц</p>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 150 000</span></button>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 150 000</span></button>
             </div>
 
             <div class="services__block services__block--escort">
               <h3 class="services__block-title">Сопровождение</h3>
               <p class="services__block-text">12 месяц</p>
-              <button class="btn btn__services btn__form-opened"><span>&#8381; 280 000</span></button>
+              <button class="btn btn__services btn__form-opened"><span>от&nbsp;&#8381; 280 000</span></button>
             </div>
 
           </div>
@@ -170,7 +724,7 @@
       <section class="present">
         <div class="container">
           <h2 class="title title__present">Подарок</h2>
-          <div class="present__wrap">
+          <div class="present__wrap present__wrap--presentation">
             <div class="present__15">
               <p class="present__text-15">15</p>
               <p class="present__text-1">Минут консультации</p>
@@ -180,36 +734,35 @@
               <p class="present__profile-text">
                 Получите подарок, заполнив анкету, нажав&nbsp;на&nbsp;кнопку&nbsp;снизу
               </p>
-              <svg class="present__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="present__svg present__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
               </svg>
-              <svg class="present__svg-2" width="88" height="98" viewBox="0 0 88 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="present__svg present__svg-2" width="88" height="98" viewBox="0 0 88 98" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M71.9938 5.39122C71.9336 4.84222 71.4398 4.44595 70.8908 4.50611C70.3418 4.56628 69.9455 5.0601 70.0057 5.6091L71.9938 5.39122ZM1.23544 78.8557C0.87944 79.278 0.933138 79.9089 1.35537 80.2649L8.23612 86.0662C8.65835 86.4222 9.28924 86.3685 9.64523 85.9462C10.0012 85.524 9.94754 84.8931 9.5253 84.5371L3.40909 79.3804L8.56582 73.2642C8.92182 72.8419 8.86812 72.2111 8.44589 71.8551C8.02365 71.4991 7.39277 71.5528 7.03677 71.975L1.23544 78.8557ZM70.0057 5.6091C73.9373 41.4848 48.4239 74.5454 1.91516 78.5039L2.08477 80.4967C49.5761 76.4546 76.0623 42.5157 71.9938 5.39122L70.0057 5.6091Z" fill="#FF0000"/>
               </svg>
               <div class="present__wrap-btn">
-                <a href="https://vk.cc/9xJ3ix" class="btn btn__present"><span>Заполните анкету</span></a>
+                <a href="https://vk.cc/9xJ3ix" class="btn btn__present" target="_blank"><span>Заполнить анкету</span></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <div class="page-footer__wrap">
           <div class="logo logo--footer">
-            <a class="logo__link" href="#">
+            <a class="logo__link">
               <picture class="logo__link-picture">
                 <source media="(min-width: 1366px)" srcset="pic/svg/logo-v.svg">
-                <source media="(min-width: 1024px)" srcset="pic/svg/logo-v.svg">
-                <source media="(min-width: 768px)" srcset="pic/svg/logo-v.svg">
+                <source media="(min-width: 1024px)" srcset="pic/svg/logo-mobile.svg">
+                <source media="(min-width: 768px)" srcset="pic/svg/logo-mobile.svg">
                 <img class="logo__img logo__img--footer" src="pic/svg/logo-mobile.svg" alt="Logo">
               </picture>
             </a>
             <div class="logo__wrap logo__wrap--footer">
-              <p class="logo__title logo__title--footer">Траектория Развития</p>
-              <p class="logo__text logo__text--footer">Единое окно субсидирования инновационных проектов</p>
               <p class="logo-footer__text-min">© 2019 Все права защищены</p>
             </div>
           </div>
@@ -220,22 +773,22 @@
 
               <div class="page-footer__contacts-box">
                 <div class="page-footer__contacts-wrap page-footer__contacts-wrap-1">
-                  <p class="page-footer__contacts-text">+7 (343) 207-51-47</p>
+                  <p class="page-footer__contacts-text page-footer__contacts-text--tel">+7 (343) 207-51-47</p>
 
-                  <p class="page-footer__contacts-text page-footer__contacts-text--email">info@traik.ru</p>
+                  <p class="page-footer__contacts-text page-footer__contacts-text--email">info@tr2b.ru</p>
                 </div>
 
                 <div class="page-footer__contacts-wrap page-footer__contacts-wrap-2">
                   <p class="page-footer__contacts-text page-footer__contacts-text--adress">г. Екатеринбург, ул. Ельциа, 4</p>
 
-                  <a class="page-footer__text" href="#">Политика конфиденциальости</a>
+                  <a class="page-footer__text" href="#privacy-policy" target="_blank">Политика конфиденциальости</a>
                 </div>
               </div>
             </div>
 
           <p class="page-footer__text-min">© 2019 Все права защищены</p>
 
-          <a href="https://kinvasoft.com/">
+          <a href="https://kinvasoft.com/" target="_blank">
             <picture class="page-footer__picture">
               <source media="(min-width: 768px)" srcset="pic/kinvasoft-ipad-v.webp">
               <img class="page-footer__img" src="pic/kinvasoft-mobile.webp" alt="Kinvasoft">
@@ -252,7 +805,7 @@
       <div class="modal-form__wrapper">
         <button class="modal-form__close" type="button" aria-label="Закрыть"></button>
 
-        <p class="modal-form__text">По какому номеру вам позвонить?</p>
+        <p class="modal-form__text">По&nbsp;какому номеру Вам позвонить?</p>
 
         <svg class="modal__svg-1" width="56" height="53" viewBox="0 0 56 53" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.2662 3.03625C15.7339 2.88902 15.183 3.20118 15.0358 3.73348C14.8885 4.26578 15.2007 4.81665 15.733 4.96388L16.2662 3.03625ZM33.0598 48.8417C33.2486 49.3608 33.8223 49.6285 34.3414 49.4398L42.7995 46.3641C43.3186 46.1754 43.5863 45.6016 43.3976 45.0826C43.2088 44.5635 42.6351 44.2958 42.116 44.4845L34.5977 47.2185L31.8637 39.7001C31.675 39.1811 31.1012 38.9133 30.5822 39.1021C30.0632 39.2908 29.7954 39.8646 29.9842 40.3836L33.0598 48.8417ZM15.733 4.96388C27.1466 8.12081 33.1349 15.2349 35.4764 23.3401C37.835 31.5045 36.5106 40.7547 33.0935 48.0771L34.9058 48.9229C38.4887 41.2453 39.9142 31.4955 37.3978 22.785C34.8643 14.0151 28.3525 6.37925 16.2662 3.03625L15.733 4.96388Z" fill="#FF0000"/>
@@ -262,21 +815,23 @@
           <path d="M50.5277 1.1508C50.0587 0.859229 49.4421 1.0031 49.1505 1.47215C48.8589 1.9412 49.0028 2.5578 49.4719 2.84937L50.5277 1.1508ZM7.20957 64.3877C6.87137 64.8243 6.95117 65.4524 7.3878 65.7906L14.503 71.3018C14.9397 71.64 15.5678 71.5602 15.906 71.1236C16.2442 70.687 16.1644 70.0589 15.7277 69.7207L9.40309 64.8218L14.3019 58.4972C14.6401 58.0605 14.5603 57.4324 14.1237 57.0942C13.6871 56.756 13.059 56.8358 12.7208 57.2724L7.20957 64.3877ZM49.4719 2.84937C58.3465 8.36603 64.3978 21.5139 60.1143 34.3031C55.8537 47.024 41.2015 59.7742 7.87413 64.008L8.12618 65.9921C41.7991 61.7143 57.3967 48.7144 62.0108 34.9383C66.602 21.2304 60.153 7.13405 50.5277 1.1508L49.4719 2.84937Z" fill="#FF0000"/>
         </svg>
 
-        <form class="help__form" action="https://echo.htmlacademy.ru" method="POST">
-          <label class="help__label"></label>
-          <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" minlength="11" title="Введите номер в указаном формате: +7 909 000 33 33">
-          <button class="btn btn__help btn__help--modal btn__opened-1"><span>Мой номер</span></button>
+        <form class="help__form form" id="formModal">
+            <input type="hidden" name="subject" value="Всплывающее окно позвонить">
+          <label class="help__label" for="phoneModal"></label>
+          <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" name="phone" id="phoneModal" title="Введите номер в указаном формате: +7 909 000 33 33">
+          <button class="btn btn__help btn__help--modal" type="submit" for="formModal"><span>Мой номер</span></button>
         </form>
 
-        <p class="modal-form__text modal-form__text--1">Не хотите ждать?</p>
-        <p class="modal-form__text modal-form__text--2">Звоните по номеру:</p>
-        <p class="modal-form__text modal-form__text--3">+7 (343) 207-51-47</p>
+        <p class="modal-form__text modal-form__text--1">Не&nbsp;хотите ждать?</p>
+        <p class="modal-form__text modal-form__text--2">Звоните&nbsp;по&nbsp;номеру:</p>
+        <a class="modal-form__text modal-form__text--3" href="tel:+7 (343) 207-51-47">+7 (343) 207-51-47</a>
       </div>
 
     </div>
+
     <!--Окно "Заявка принята"-->
     <div class="modal-confirmation__overlay"></div>
-    <div class="modal-confirmation" id="modalConfirmation">
+    <div class="modal-confirmation modal-confirmation-ok" id="modalConfirmation">
       <div class="modal-confirmation__wrapper">
         <button class="modal-confirmation__close modal__close-1" type="button" aria-label="Закрыть"></button>
         <div class="modal-confirmation__block">
@@ -286,15 +841,15 @@
           <p class="modal-confirmation__title">Ваша заявка принята!</p>
         </div>
         <div class="modal-confirmation__block">
-          <a href="#" class="modal-confirmation__text">Вернуться на сайт</a>
-          <a href="#" class="btn btn__modal btn__present"><span>Бесплатная консультация</span></a>
+          <a href="#" class="modal-confirmation__text">Вернуться&nbsp;на&nbsp;сайт</a>
+          <a href="#" class="btn btn__modal btn__anketa"><span>Бесплатная консультация</span></a>
         </div>
       </div>
     </div>
 
     <!--Окно "Что-то пошло не так"-->
     <div class="modal-confirmation__overlay"></div>
-    <div class="modal-confirmation modal-confirmation--error" id="modal-confirmation-error">
+    <div class="modal-confirmation modal-confirmation--error" id="modalConfirmationError">
       <button class="modal-confirmation__close modal__close-2" type="button" aria-label="Закрыть"></button>
       <div class="modal-confirmation__wrapper">
         <div class="modal-confirmation__block">
@@ -304,8 +859,8 @@
           <p class="modal-confirmation__title modal-confirmation__title--error">Что-то пошло не так!</p>
         </div>
         <div class="modal-confirmation__block">
-        <a href="#" class="modal-confirmation__text">Вернуться на сайт</a>
-        <a href="#" class="btn btn__modal btn__present"><span>Бесплатная консультация</span></a>
+        <a href="#" class="modal-confirmation__text">Вернуться&nbsp;на&nbsp;сайт</a>
+        <a href="#" class="btn btn__modal btn__anketa"><span>Бесплатная консультация</span></a>
         </div>
       </div>
     </div>
@@ -331,18 +886,95 @@
           <svg class="present__svg-2" width="88" height="98" viewBox="0 0 88 98" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M71.9938 5.39122C71.9336 4.84222 71.4398 4.44595 70.8908 4.50611C70.3418 4.56628 69.9455 5.0601 70.0057 5.6091L71.9938 5.39122ZM1.23544 78.8557C0.87944 79.278 0.933138 79.9089 1.35537 80.2649L8.23612 86.0662C8.65835 86.4222 9.28924 86.3685 9.64523 85.9462C10.0012 85.524 9.94754 84.8931 9.5253 84.5371L3.40909 79.3804L8.56582 73.2642C8.92182 72.8419 8.86812 72.2111 8.44589 71.8551C8.02365 71.4991 7.39277 71.5528 7.03677 71.975L1.23544 78.8557ZM70.0057 5.6091C73.9373 41.4848 48.4239 74.5454 1.91516 78.5039L2.08477 80.4967C49.5761 76.4546 76.0623 42.5157 71.9938 5.39122L70.0057 5.6091Z" fill="#FF0000"/>
           </svg>
-          <a href="#" class="modal-confirmation__text modal-confirmation__text--present">Не хочу подарок</a>
+          <a href="#" class="modal-confirmation__text modal-confirmation__text--present modal-confirmation-close" onclick="window.close();">Не хочу подарок</a>
           <div class="present__wrap-btn">
-            <a href="https://vk.cc/9xJ3ix" class="btn btn__present"><span>Заполните анкету</span></a>
+            <a href="https://vk.cc/9xJ3ix" class="btn btn__present" target="_blank"><span>Заполнить анкету</span></a>
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
+
+     <!--Модальное окно 1-->
+    <div class="modal-form__overlay"></div>
+    <div class="modal-form modal-form--1" id="modalForm1">
+
+      <div class="modal-form__wrapper">
+        <button class="modal-form__close modal-form__close-1" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="modal-form__text modal-form__text--p modal-form__text--p-1">По итогу работ Вы получите:</h2>
+
+        <ul class="modal-form__list">
+          <li class="modal-form__item modal-form__text--0">1. Разработанную дорожную карту мероприятий
+            направленных на развитие компании
+            заказчика в рамках реализации национальных проектов (входящих в них федеральных проектов).
+          </li>
+          <li class="modal-form__item modal-form__text--0">2. Разработаем стратегию получения инвестиций
+            от институтов развития РФ.
+          </li>
+        </ul>
+
+        <h2 class="modal-form__text modal-form__text--p">Получите форму стратегии развития</h2>
+
+        <form class="help__form form" id="formModal1">
+          <input type="hidden" name="subject" value="Разработать дорожную карту кнопка подробнее">
+          <label class="help__label" for="phoneModal1"></label>
+          <input class="help__input input-phone" placeholder="+7 (___) ___-__ -__" required="" name="phone" id="phoneModal1" title="Введите номер в указаном формате: +7 909 000 33 33">
+          <button class="btn btn__help btn__help--modal" type="submit" for="formModal1"><span>Получить форму</span></button>
+        </form>
+
+      </div>
+
+     </div>
+
+     <!--Модальное окно 2-->
+     <div class="modal-form__overlay"></div>
+     <div class="modal-form modal-form--2" id="modalForm2">
+
+      <div class="modal-form__wrapper">
+        <button class="modal-form__close modal-form__close-2" type="button" aria-label="Закрыть"></button>
+
+        <h2 class="modal-form__text modal-form__text--p modal-form__text--p-1">У нас можно узнать:</h2>
+
+        <ul class="modal-form__list">
+
+          <li class="modal-form__item modal-form__text--0">1. О национальных проектах РФ.</li>
+          <li class="modal-form__item modal-form__text--0">2. О институтах развития РФ.</li>
+          <li class="modal-form__item modal-form__text--0">3. О программах развития и правильности заполнения заявок.</li>
+
+        </ul>
+        <h2 class="modal-form__text modal-form__text--p">Нужно больше информации?</h2>
+
+        <form class="help__form form" id="formModal2">
+          <input type="hidden" name="subject" value="Консультация, кнопка подробнее">
+          <label class="help__label" for="phoneModal2"></label>
+          <input class="help__input input-phone" type="tel" placeholder="+7 (___) ___-__ -__" required="" name="phone" id="phoneModal2" title="Введите номер в указаном формате: +7 909 000 33 33">
+          <button class="btn btn__help btn__help--modal" type="submit" for="formModal2"><span>Обратный звонок</span></button>
+        </form>
+
+      </div>
+
+     </div>
+
+    <!--Модальное окно "Политика конфиденциальности"-->
+    <div class="modal-form__overlay"></div>
+    <div class="modal-form modal-form--privacy-policy" id="mfPrivacyPolicy">
+      <div class="modal-form__wrapper">
+        <button class="modal-form__close modal-form__close-privacy-policy" type="button" aria-label="Закрыть"></button>
+        <div class="modal-form__content-wrapper">
+          <div class="modal-form__content">
+            <!-- Privacy policy content -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/modernizr-1.7.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
     <script src="vendor/slick/slick.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/modernizr-1.7.min.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>

@@ -40,7 +40,7 @@
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 50px;
-  padding-bottom: 60px;
+  padding-bottom: 105px;
 
   text-align: center;
 
@@ -48,26 +48,69 @@
 
   border: 2px solid #FF0000;
   border-radius: 21px;
+
+  &--1 {
+    display: none;
+
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 115px;
+  }
+
+  &--2 {
+    display: none;
+
+    padding-left: 20px;
+  }
 }
 
 .modal-form__text {
   color: #444444;
   font-size: 28px;
-  line-height: 37px;
+  line-height: 140%;
 
   &--1 {
     margin: 0;
-    margin-top: 50px;
+    margin-top: 40px;
+
+    line-height: 150%;
+    color: $color-slim;
   }
 
   &--2 {
     margin: 0;
+    margin-top: 2px;
 
+    line-height: 150%;
     font-size: 20px;
+    color: $color-slim;
   }
 
   &--3 {
     margin: 0;
+    margin-top: 10px;
+
+    line-height: 150%;
+    color: $color-slim;
+  }
+
+  &--0 {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #2e2e2e;
+    line-height: 130%;
+  }
+
+  &--p {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  &--p-1 {
+    margin-bottom: 40px;
   }
 }
 
@@ -120,6 +163,20 @@
   }
 }
 
+.modal-form__close-2 {
+  right: 0;
+  top: -50px;
+}
+
+.modal-form__close-1 {
+  right: 0;
+  top: -20px;
+}
+
+.modal-form__list {
+  @include reset-list();
+}
+
 @media #{$tablet-widths-v} {
   .modal-form {
     width: 600px;
@@ -143,29 +200,70 @@
 
 @media #{$tablet-widths-h} {
   .modal-form {
-    width: 758px;
-    padding: 80px;
+    width: 798px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-left: 7px;
   }
 
   .modal-form__text {
+    margin: 0;
+    margin-top: -17px;
+
     color: #444444;
-    font-size: 34px;
-    line-height: 37px;
+    font-size: 32px;
+    line-height: 150%;
 
     &--1 {
       margin: 0;
       margin-top: 50px;
+      margin-left: 20px;
+
+      color: $color-slim;
     }
 
     &--2 {
       margin: 0;
+      margin-left: 20px;
 
       font-size: 24px;
+      color: $color-slim;
     }
 
     &--3 {
       margin: 0;
+      margin-left: 20px;
+
+      color: $color-slim;
     }
+
+    &--0 {
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-right: 200px;
+
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+
+    &--p {
+      margin-top: 20px;
+      margin-bottom: 40px;
+      margin-left: 40px;
+
+      font-size: 22px;
+      text-align: left;
+    }
+  }
+
+  .modal-form--1,
+  .modal-form--2 {
+    padding: 80px;
+
+    padding-right: 0;
+    padding-bottom: 100px;
+    padding-top: 100p;
   }
 
   .modal__svg-1 {
@@ -176,13 +274,57 @@
     display: block;
 
     position: absolute;
-    right: -10px;
-    top: 20px;
+    right: 70px;
+    top: 27px;
   }
 
   .modal-form__close {
     position: absolute;
-    top: -80px;
-    right: -40px;
+    top: -40px;
+    right: -25px;
+  }
+
+  .modal-form__close-2 {
+    right: 40px;
+    top: -60px;
+  }
+
+  .modal-form__close-1 {
+    right: 40px;
+    top: -60px;
+  }
+
+  .modal-form .help__form {
+    margin-top: 20px;
+    margin-left: -15px;
+  }
+
+  .modal-form .help__input {
+    width: 400px;
+  }
+
+  .modal-form .btn__help {
+    width: 200px;
+    right: 173px;
+  }
+
+  .modal-form--1 .help__form {
+    margin-top: 20px;
+    margin-left: -230px;
+  }
+
+  .modal-form--2 .help__form {
+    margin-top: 20px;
+    margin-left: -240px;
+  }
+
+  .modal-form--2 .btn__help {
+    width: 240px;
+    right: 270px;
+  }
+
+  .modal-form--1 .btn__help {
+    width: 230px;
+    right: 270px;
   }
 }

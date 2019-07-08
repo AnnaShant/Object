@@ -1,0 +1,505 @@
+.do-investments {
+  padding-bottom: 20px;
+
+  color: #232323;
+}
+
+.do-investments__block-text {
+  margin-top: 10px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.do-investments__block-text span {
+  font-weight: 700;
+}
+
+.do-investments__circle {
+  position: relative;
+}
+
+.do-investments__circle svg {
+  position: absolute;
+  left: -73px;
+  top: -26px;
+
+  width: 247px;
+  height: 247px;
+}
+
+.do-investments__circle-text {
+  position: absolute;
+
+  left: 0;
+  top: 30px;
+
+  transform: rotate(-90deg);
+
+  &--big {
+    left: -20px;
+    top: 35px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+  }
+
+  &--1,
+  &--2,
+  &--3 {
+    display: none;
+  }
+}
+
+.do-investments__circle-text--big span {
+  position: absolute;
+  left: 3px;
+  top: 30px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.do-investments__wrap-line {
+  position: relative;
+
+  margin-left: 110px;
+  margin-top: -280px;
+}
+
+.do-investments-3 {
+  transform: rotate(180deg);
+  transform: scale(1,-1);
+}
+
+.do-investments__text {
+  margin: 0;
+  margin-left: 30px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+
+  &--2 {
+    margin-top: 68px;
+  }
+
+  &--3 {
+    margin-top: 115px;
+  }
+}
+
+.do-investments__box-1 {
+  position: relative;
+
+  margin-top: 36px;
+  margin-left: -5px;
+}
+
+.do-investments__svg--d,
+.do-investments__svg--h {
+  display: none;
+}
+
+.do-investments__box-1 svg {
+  position: absolute;
+
+  width: 185px;
+  height: 30px;
+}
+
+.do-investments__box-2 {
+  position: relative;
+
+  margin-top: -21px;
+  margin-left: -10px;
+}
+
+.do-investments__box-2 svg {
+  position: absolute;
+  top: 20px;
+
+  width: 190px;
+  height: 9px;
+}
+
+.do-investments__box-3 {
+  position: absolute;
+
+  width: 200px;
+
+  margin-top: -73px;
+  margin-left: -10px;
+}
+
+.do-investments__box-3 svg {
+  position: absolute;
+  top: 115px;
+
+  width: 190px;
+  height: 30px;
+
+  transform: scale(1,-1);
+}
+
+.do-investments-1 {
+  position: absolute;
+  top: 25px;
+  left: 4px;
+}
+
+.do-investments-2 {
+  position: absolute;
+  top: 53px;
+  left: 6px;
+}
+
+.do-investments-3 {
+  position: absolute;
+  bottom: 22px;
+  left: 4px;
+}
+
+.do-investments__list {
+  @include reset-list();
+
+  margin-top: 142px;
+}
+
+.do-investments__item {
+  margin-bottom: 25px;
+}
+
+.do-investments__list-title {
+  margin: 0;
+  margin-bottom: 2px;
+
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.do-investments__list-title b {
+  padding-left: 22px;
+}
+
+.do-investments__list-text {
+  margin: 0;
+  margin-left: 25px;
+
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.do-investments__img {
+  margin-left: -25px;
+  margin-top: -30px;
+
+  width: 145px;
+  height: 287px;
+}
+
+@media #{$tablet-widths-v} {
+  .do-investments {
+    padding-top: 40px;
+  }
+
+  .do-investments__box {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 60px;
+  }
+
+  .do-investments__circle-text {
+    &--big {
+      top: 67px;
+    }
+  }
+
+  .do-investments__list {
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .do-investments__box-1 svg {
+    top: 25px;
+  }
+
+  .do-investments__box-1 {
+    margin-top: 37px;
+  }
+
+  .do-investments__box-2 {
+    margin-top: -22px;
+    margin-left: -12px;
+  }
+
+  .do-investments__box-3 {
+    width: 250px;
+
+    margin-top: -67px;
+    margin-left: -7px;
+  }
+
+  .do-investments__list-title b {
+    padding-left: 0;
+  }
+
+  .do-investments__circle {
+    width: 320px;
+    margin-top: 20px;
+  }
+
+  .do-investments__text {
+    &--2 {
+     margin-left: 40px;
+    }
+
+    &--3 {
+      margin-left: 35px;
+    }
+  }
+}
+
+@media #{$tablet-widths-h} {
+  .do-investments {
+    padding-bottom: 0;
+  }
+
+  .do-investments__wrap {
+    position: relative;
+
+    padding-bottom: 25px;
+  }
+
+  .do-investments__circle {
+    width: 494px;
+  }
+
+  .do-investments__img {
+    margin-left: 30px;
+    margin-top: -13px;
+
+    width: 494px;
+    height: 494px;
+  }
+
+  .do-investments__block-text {
+    width: 850px;
+
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .do-investments__wrap-line {
+    position: absolute;
+    right: 95px;
+    top: 215px;
+
+    margin: 0;
+  }
+
+  .do-investments__svg--d,
+  .do-investments__svg--m {
+    display: none;
+  }
+
+
+  .do-investments__svg--h {
+    display: block;
+  }
+
+  .do-investments__box-1 {
+    margin-top: 40px;
+  }
+
+  .do-investments__box-2 {
+    margin-top: 32px;
+    margin-left: -5px;
+  }
+
+  .do-investments__box-3 {
+    margin-top: 55px;
+    margin-left: -20px;
+  }
+
+  .do-investments__svg--m,
+  .do-investments__svg--d {
+    display: none;
+  }
+
+  .do-investments__box-1 svg {
+    width: 375px;
+    height: 132px;
+
+    top: -20px;
+    right: 10px;
+  }
+
+  .do-investments__box-2 svg {
+    width: 375px;
+    height: 20px;
+
+    right: 0;
+    top: 150px;
+  }
+
+  .do-investments__box-3 svg {
+    width: 395px;
+    height: 132px;
+
+    right: 230px;
+    top: 180px;
+
+    transform: scale(1, 1);
+  }
+
+  .do-investments__text {
+    display: none;
+  }
+
+  .do-investments__list {
+    position: absolute;
+    right: 70px;
+    top: 210px;
+
+    width: 370px;
+
+    list-style-type: none;
+  }
+
+  .do-investments__list-title {
+    margin-bottom: 15px;
+    margin-left: 25px;
+
+    font-size: 32px;
+    line-height: 130%;
+
+    &--2 {
+      margin-top: 35px;
+    }
+
+    &--3 {
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .do-investments__list-title span {
+    display: none;
+  }
+
+  .do-investments__list-text {
+    width: 330px;
+
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+@media #{$desktop-widths} {
+  .do-investments {
+    padding-bottom: 50px;
+  }
+
+  .do-investments__circle {
+    width: 552px;
+  }
+
+  .do-investments__img {
+    margin-left: 5px;
+    margin-top: -10px;
+
+    width: 552px;
+    height: 552px;
+  }
+
+  .do-investments__svg--m,
+  .do-investments__svg--h {
+    display: none;
+  }
+
+  .do-investments__svg--d {
+    display: block;
+  }
+
+  .do-investments__list {
+    position: absolute;
+    right: 120px;
+
+    width: 370px;
+
+    list-style-type: none;
+  }
+
+  .do-investments__list-title {
+    margin-bottom: 15px;
+    margin-left: 25px;
+
+    font-size: 32px;
+    line-height: 130%;
+
+    &--2 {
+      margin-top: 110px;
+    }
+
+    &--3 {
+      margin-top: 95px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .do-investments__list-text {
+    width: 450px;
+  }
+
+  .do-investments__wrap-line {
+    position: absolute;
+    right: 0px;
+    top: 210px;
+
+    margin: 0;
+  }
+
+  .do-investments__box-1 {
+    margin-top: 40px;
+    margin-left: -10px;
+  }
+
+  .do-investments__box-2 {
+    margin-top: 45px;
+    margin-left: -5px;
+  }
+
+  .do-investments__box-3 {
+    margin-top: 77px;
+    margin-left: -5px;
+  }
+
+  .do-investments__box-1 svg {
+    width: 600px;
+    height: 132px;
+
+    top: -20px;
+  }
+
+  .do-investments__box-2 svg {
+    width: 600px;
+    height: 9px;
+
+    top: 195px;
+  }
+
+  .do-investments__box-3 svg {
+    width: 600px;
+    height: 132px;
+
+    right: 262px;
+    top: 230px;
+
+    transform: scale(1,-1);
+  }
+}

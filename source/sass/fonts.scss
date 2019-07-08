@@ -1,35 +1,26 @@
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "Roboto";
   src:
-    url("../fonts/fira-sans-300.woff2") format("woff2"),
-    url("../fonts/fira-sans-300.woff") format("woff");
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Fira Sans";
-  src:
-    url("../fonts/fira-sans-regular.woff2") format("woff2"),
-    url("../fonts/fira-sans-regular.woff") format("woff");
+    url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "Roboto";
   src:
-    url("../fonts/fira-sans-500.woff2") format("woff2"),
-    url("../fonts/fira-sans-500.woff") format("woff");
+    url("../fonts/roboto-500.woff2") format("woff2"),
+    url("../fonts/roboto-500.woff") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
-  font-family: "Fira Sans";
+  font-family: "Roboto";
   src:
-    url("../fonts/fira-sans-700.woff2") format("woff2"),
-    url("../fonts/fira-sans-700.woff") format("woff");
+    url("../fonts/roboto-700.woff2") format("woff2"),
+    url("../fonts/roboto-700.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
